@@ -25,7 +25,7 @@ $('.radio-dsktop').click(function () {
   if ($(this).prop("checked") == true) {
     iNum = iNum + 1;
     $('.num--box').text(iNum);
-    $(".box--p").before('<div class=" ' + $(this).val() + ' d-flex justify-content-between mt-3 mb-3">' + '<img class=" ' + $(this).val() + '" style="width:25px" src =\"images/desktop/' + $(this).val() + '.png' + '">' + '<li class=' + $(this).val() + '>' + $(this).val() + '</li>' + '</div>');
+    $(".box--p").after('<div class=" ' + $(this).val() + ' d-flex justify-content-between mt-3 mb-3">' + '<img class=" ' + $(this).val() + '" style="width:25px" src =\"images/desktop/' + $(this).val() + '.png' + '">' + '<li class=' + $(this).val() + '>' + $(this).val() + '</li>' + '</div>');
     xPrice = parseInt(xPrice) + parseInt($(this).parent().parent().attr('value'));
     $('.box--price').text(xPrice);
   } else if ($(this).prop("checked") == false) {

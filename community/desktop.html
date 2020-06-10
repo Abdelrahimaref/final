@@ -31,6 +31,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
 
 
+        <style>
+            @media(max-width:992px) {
+                .phone--apear {
+                    display: block !important;
+                }   
+                .phone--dis {
+                    display: none;
+                }
+            }
+
+        </style>
        <!---->
 	</head>
 	<body>
@@ -150,13 +161,13 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-12 ">
                             <div class="ask-card3 p-2">
-                                <ul class="list-unstyled card--li shadow bg-white" style="min-height: 100px;width:208px; padding: 1rem;" id="card--li"> 
+                                <ul class="list-unstyled card--li shadow bg-white phone--dis" style="min-height: 100px;width:208px; padding: 1rem;" id="card--li"> 
                                     <p class="text-center mb-3"> <span style="font-weight:bold" class="num--box">0</span> App Selected</p>
                                     <div class="d-flex justify-content-end box--p mt-5" style="flex-direction: column;">
                                         <div class="text-center">
                                             Total Price : <strong><span class="box--price">0</span> LE</strong>
                                         </div>
-                                        <button class="form-control  btn btn-primary ">Continue</button>
+                                        <a href="#" class="form-control  btn btn-primary ">Continue</a>
                                     </div>
                                 </ul>
                             </div>
@@ -1098,6 +1109,18 @@
                                     </div>
 
                                 </div>
+                            </div>
+
+                            <div class="ask-card3 p-2 w-100 fixed-bottom phone--apear" style="display: none;">
+                                <ul class="list-unstyled card--li shadow bg-white" style="min-height: 100px;max-height: 300px; ;padding: 1rem; overflow: auto;" id="card--li"> 
+                                    <p class="text-center mb-3"> <span style="font-weight:bold" class="num--box">0</span> App Selected</p>
+                                    <div class="d-flex justify-content-end box--p mt-5 fixed-bottom mt-3" style="flex-direction: column;">
+                                        <div class="text-center mt-3 ">
+                                            Total Price : <strong><span class="box--price">0</span> LE</strong>
+                                        </div>
+                                        <a href="#" class="form-control  btn btn-primary pt-3 pb-5 mt-3" style="font-size: 14px !important;">Continue</a>
+                                    </div>
+                                </ul>
                             </div>
                         </div>
                     </div>

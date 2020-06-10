@@ -1,0 +1,36 @@
+.slider {
+    padding-top: 15rem;
+    &__content{
+        &-con {
+            padding-top: 10rem;
+
+            .h1-con {
+                top: 0px;
+                overflow: visible;
+                padding-bottom: 0px;
+                font-family: Roboto;
+                font-size: 40px;
+                color: rgb(33, 33, 33);
+                line-height: 1.4;
+                border-radius: 0px;
+                margin-top: 1rem;
+                margin-bottom: 4rem;
+                font-weight: 400;
+            }
+            .def-con {
+                overflow: visible;
+                padding-bottom: 0px;
+                font-family: Roboto;
+                font-size: 22px;
+                font-weight: 300;
+                color: rgb(61, 61, 61);
+                line-height: 1.4;
+                border-radius: 0px;
+                margin-top: 1rem;
+                margin-bottom: 4rem;
+                
+            }
+        }
+
+    }
+}

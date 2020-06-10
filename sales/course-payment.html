@@ -1,0 +1,759 @@
+<html>
+   <head>
+	   <!--TO Support Many Language Include Arabic Language-->
+        <meta charset="utf-8"/>
+	   
+	   <!--For Internet Explorer-->
+	    <meta http-equiv="X-UA-	Compatible"content="IE=edge">
+	   
+	   <!--First mobilw meta-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	   
+        <meta name="description"content="mt company">
+        <title>4SOFT</title>
+        <link rel="shortcut icon" href="images/Sales Link png.png">
+        <!--call bootstrap-->
+	    <link rel="stylesheet"href="css/bootstrap.css"/>
+        <!--Page Style-->	   
+        <link rel="stylesheet"href="css/main.css"/>
+       <!--Animate.css-->
+       <link rel="stylesheet"href="css/animate.min.css"/>
+       <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>        
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">        
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	   <!--Internet Explorer-->
+	    <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+       <!---->
+
+       <style>
+           li {
+            font-family: 'Roboto';
+            font-size: 16px;
+            color: rgb(136, 136, 136);
+            line-height: 1.2;
+            padding-top: 1px;
+            cursor: pointer;
+            margin-top: 10px;
+           }
+       </style>
+	</head>
+	<body>
+
+        <!--- Header Section-->
+        <div class="Nav wow fadeInUp">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light nav-scroll  fixed-top  py-4 border-bottom mb-5 pl-5 pr-5 bg-white">
+                    <img src="images/Sales Link png.png" style=" width: 120px ; height: 80px;"  >                        
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto"></ul>
+                        <ul class="navbar-nav ml-auto">   
+                            <li class="nav-item  active pr-5">
+                                <a class="nav-link text-primary" href="../first-page/index_pages/index.html">Home </span></a>
+                            </li>
+                            <li class="nav-item  active pr-5">
+                                <a class="nav-link text-primary" href="#payment"> Payment </span></a>
+                            </li>
+                            <li class="nav-item  active pr-5">
+                                <a class="nav-link" href="#related">Related Projects</a>
+                            </li>
+
+                            <li class="nav-item  active pr-5">
+                                <a class="nav-link" href="#questions">Common Questions</a>
+                            </li> 
+                               
+                            <div class="d-flex justify-content-center">
+                                <li>
+                                    <a href="#" class="btn  btn-lg pt-4 get-link2 mr-4 btn-primary" style="width: 130px; height: 48px;"> 
+                                        Log In
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn  btn-lg pt-4 get-link2 border border-primary text-primary" style="width: 130px; height: 48px;"> 
+                                        Log Out
+                                    </a>
+                                </li>
+                            </div>
+
+                                               
+                        </ul>
+                    </div>
+                </nav>
+            </div>            
+        </div>
+
+        <!---------- Slider Section ---------->
+        <div class="slider" id="payment">
+            <div class="slider__content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 position-relative">
+                            <div class="bg-white">
+                                <img src="images/ill.svg" alt="" class="w-100">
+                                <span class="position-absolute click-play"style="top: 155px;right: 160px;cursor:pointer"  data-toggle="modal" data-target="#modal1"><i class="fab fa-youtube text-danger" style="font-size: 50px;"></i></span>
+                                <div class="card-footer text-center bg-white">
+                                    <a href="#" class="btn  btn-lg mt-2 pt-4 get-link2 btn-info" style="width: 240px; height: 48px;"> 
+                                        Live Demo
+                                    </a>
+                                </div>    
+
+                            </div>
+                        </div>
+
+                        <!------------- Style In payment.scss in pages Folder ------------->
+                        <div class="col-md-7 slider__content-con pt-5">
+                            <div class="pay-box p-5">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <h2 class="mb-4 project__title">Marketo</h2>
+                                        <h2 class="project__desc">
+                                            Marketplace like Amazon Template
+                                        </h2>
+
+                                        <div class="mt-3 p-3">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="payment-section pay11 active-box mr-3" data-toggle="modal" data-target="#modal3">
+                                                    <h2 class="payment-section__h2">Standard License</h2>
+                                                    <div class="text-center">
+                                                        <button class="payment-section__btn active-btn btn1">Buy - 150 LE</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="payment-section pay22 non-active-box" style="opacity: 0.6;" data-toggle="modal" data-target="#modal3">
+                                                    <h2 class="payment-section__h2">Standard License</h2>
+                                                    <div class="text-center">
+                                                        <button class="payment-section__btn non-active-btn btn2">Buy - 150 LE</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 left-border d-flex justify-content-center w-100">
+                                        <ul class="unstyled-list">
+                                            <li class="li-list"><i class="far fa-file-word mr-2"></i>  Documentation</li>
+                                            <li class="li-list"><i class="fas fa-book-open mr-2"></i> Tutorials</li>
+                                            <li class="li-list"><i class="fas fa-cogs mr-2"></i> Customize this template</li>
+                                            <li class="li-list"><i class="fas fa-cloud-download-alt mr-2"></i> Download Sketch or PSD</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content mt-5">
+                                <p>
+                                    Marketo no-code template replicates Amazon's main functionality, 
+                                    bringing buyers and sellers together on your custom marketplace 
+                                    platform. It allows selling both physical and digital goods and 
+                                    the template integrates Stripe for split payments, allowing the 
+                                    platform to facilitate payments between the buyer and seller while 
+                                    owner keeps any commission. Customize your admin dashboard with just 
+                                    the functionality you need to make sure transactions are running smoothly.
+                                </p>
+                                <p>Featurs</p>
+                                <ul class="unstyled-list pl-2">
+                                    <li>- Landing Page </li>
+                                    <li>- Responsive Design </li>
+                                    <li>- Split payments </li>
+                                    <li>- Admin dashboard </li>
+                                    <li>- Buyer and Seller dashboards </li>
+                                    <li>- Dark Mode </li>
+                                    <li>- Landing Page </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!---- Social Icon ---->
+            <!-- <div class="main-slider__social">
+                <ul class="ul">
+                    <li class=" li twitter">
+                        <a href="#">
+                            Twitter
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class=" li facebook">
+                        <a href="#">
+                            Facebook
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class=" li google">
+                        <a href="#">
+                            Google-Plus
+                            <i class="fab fa-google-plus" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="li insta">
+                        <a href="#">
+                            Instagram
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+
+        </div>
+
+
+        <!--------------  Courses Section -------------->
+
+        <div class="courses" id="related">
+            <div class="title">
+                <h1>Related Projects</h1>
+            </div>
+           
+            <div class="search-section">
+                <div class="container">
+                    <!--- Course Box Section -- Style in courses.scss file in components Folder --->
+                    <div class="course-box">
+                        <div class="row">
+
+                            <div class="col-lg-4 col-md-6 course blogBox2">
+                                <a href="course-payment.html">
+                                    <div class="w-100">
+                                        <img src="images/course1.png" class="w-100"  alt="">
+                                        <div class="card w-100 pb-4">
+                                            
+                                            <div class="course__title">
+                                                <div class="d-flex justify-content-between mt-2 p-2">
+                                                    <h1 class="mt-3"> Triviaro </h1>
+                                                    <img src="images/cmt2.jpg" alt="" width="30" class="rounded-circl">
+
+                                                </div>
+                                                <p class="mt-2"> 
+                                                    Learn to build anything you want and launch it in the soonest possible 
+                                                    way Learn to build anything you want and launch it in the soonest possible way!  
+                                                </p>
+                                                <div class="badge bg-info text-white ml-3 p-3">150 LE</div>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 course blogBox2 moreBox2">
+                                <a href="course-payment.html">
+                                    <div class="w-100">
+                                        <img src="images/course1.png" class="w-100"  alt="">
+                                        <div class="card w-100 pb-4">
+                                            
+                                            <div class="course__title">
+                                                <div class="d-flex justify-content-between mt-2 p-2">
+                                                    <h1 class="mt-3"> Triviaro </h1>
+                                                    <img src="images/cmt2.jpg" alt="" width="30" class="rounded-circl">
+
+                                                </div>
+                                                <p class="mt-2"> 
+                                                    Learn to build anything you want and launch it in the soonest possible 
+                                                    way Learn to build anything you want and launch it in the soonest possible way!  
+                                                </p>
+                                                <div class="badge bg-info text-white ml-3 p-3">150 LE</div>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 course blogBox2 moreBox2">
+                                <a href="course-payment.html">
+                                    <div class="w-100">
+                                        <img src="images/course1.png" class="w-100"  alt="">
+                                        <div class="card w-100 pb-4">
+                                            
+                                            <div class="course__title">
+                                                <div class="d-flex justify-content-between mt-2 p-2">
+                                                    <h1 class="mt-3"> Triviaro </h1>
+                                                    <img src="images/cmt2.jpg" alt="" width="30" class="rounded-circl">
+
+                                                </div>
+                                                <p class="mt-2"> 
+                                                    Learn to build anything you want and launch it in the soonest possible 
+                                                    way Learn to build anything you want and launch it in the soonest possible way!  
+                                                </p>
+                                                <div class="badge bg-info text-white ml-3 p-3">150 LE</div>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 course blogBox2 moreBox2" style="display: none;">
+                                <a href="course-payment.html">
+                                    <div class="w-100">
+                                        <img src="images/course1.png" class="w-100"  alt="">
+                                        <div class="card w-100 pb-4">
+                                            
+                                            <div class="course__title">
+                                                <div class="d-flex justify-content-between mt-2 p-2">
+                                                    <h1 class="mt-3"> Triviaro </h1>
+                                                    <img src="images/cmt2.jpg" alt="" width="30" class="rounded-circl">
+
+                                                </div>
+                                                <p class="mt-2"> 
+                                                    Learn to build anything you want and launch it in the soonest possible 
+                                                    way Learn to build anything you want and launch it in the soonest possible way!  
+                                                </p>
+                                                <div class="badge bg-info text-white ml-3 p-3">150 LE</div>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 course blogBox2 moreBox2" style="display: none;">
+                                <a href="course-payment.html">
+                                    <div class="w-100">
+                                        <img src="images/course1.png" class="w-100"  alt="">
+                                        <div class="card w-100 pb-4">
+                                            
+                                            <div class="course__title">
+                                                <div class="d-flex justify-content-between mt-2 p-2">
+                                                    <h1 class="mt-3"> Triviaro </h1>
+                                                    <img src="images/cmt2.jpg" alt="" width="30" class="rounded-circl">
+
+                                                </div>
+                                                <p class="mt-2"> 
+                                                    Learn to build anything you want and launch it in the soonest possible 
+                                                    way Learn to build anything you want and launch it in the soonest possible way!  
+                                                </p>
+                                                <div class="badge bg-info text-white ml-3 p-3">150 LE</div>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            
+                            <div class="col-lg-4 col-md-6 course blogBox2 moreBox2" style="display: none;">
+                                <a href="course-payment.html">
+                                    <div class="w-100">
+                                        <img src="images/course1.png" class="w-100"  alt="">
+                                        <div class="card w-100 pb-4">
+                                            
+                                            <div class="course__title">
+                                                <div class="d-flex justify-content-between mt-2 p-2">
+                                                    <h1 class="mt-3"> Triviaro </h1>
+                                                    <img src="images/cmt2.jpg" alt="" width="30" class="rounded-circl">
+
+                                                </div>
+                                                <p class="mt-2"> 
+                                                    Learn to build anything you want and launch it in the soonest possible 
+                                                    way Learn to build anything you want and launch it in the soonest possible way!  
+                                                </p>
+                                                <div class="badge bg-info text-white ml-3 p-3">150 LE</div>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 course blogBox2 moreBox2" style="display: none;">
+                                <a href="course-payment.html">
+                                    <div class="w-100">
+                                        <img src="images/course1.png" class="w-100"  alt="">
+                                        <div class="card w-100 pb-4">
+                                            
+                                            <div class="course__title">
+                                                <div class="d-flex justify-content-between mt-2 p-2">
+                                                    <h1 class="mt-3"> Triviaro </h1>
+                                                    <img src="images/cmt2.jpg" alt="" width="30" class="rounded-circl">
+
+                                                </div>
+                                                <p class="mt-2"> 
+                                                    Learn to build anything you want and launch it in the soonest possible 
+                                                    way Learn to build anything you want and launch it in the soonest possible way!  
+                                                </p>
+                                                <div class="badge bg-info text-white ml-3 p-3">150 LE</div>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 course blogBox2 moreBox2" style="display: none;">
+                                <a href="course-payment.html">
+                                    <div class="w-100">
+                                        <img src="images/course1.png" class="w-100"  alt="">
+                                        <div class="card w-100 pb-4">
+                                            
+                                            <div class="course__title">
+                                                <div class="d-flex justify-content-between mt-2 p-2">
+                                                    <h1 class="mt-3"> Triviaro </h1>
+                                                    <img src="images/cmt2.jpg" alt="" width="30" class="rounded-circl">
+
+                                                </div>
+                                                <p class="mt-2"> 
+                                                    Learn to build anything you want and launch it in the soonest possible 
+                                                    way Learn to build anything you want and launch it in the soonest possible way!  
+                                                </p>
+                                                <div class="badge bg-info text-white ml-3 p-3">150 LE</div>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 course blogBox2 moreBox2" style="display: none;">
+                                <a href="course-payment.html">
+                                    <div class="w-100">
+                                        <img src="images/course1.png" class="w-100"  alt="">
+                                        <div class="card w-100 pb-4">
+                                            
+                                            <div class="course__title">
+                                                <div class="d-flex justify-content-between mt-2 p-2">
+                                                    <h1 class="mt-3"> Triviaro </h1>
+                                                    <img src="images/cmt2.jpg" alt="" width="30" class="rounded-circl">
+
+                                                </div>
+                                                <p class="mt-2"> 
+                                                    Learn to build anything you want and launch it in the soonest possible 
+                                                    way Learn to build anything you want and launch it in the soonest possible way!  
+                                                </p>
+                                                <div class="badge bg-info text-white ml-3 p-3">150 LE</div>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="text-center w-100">
+                                <a  class="btn btn-lg mt-5 pt-4 get-link text-white " id="loadMore2" style="width: 240px; height: 48px;cursor: pointer;"> 
+                                    Load More
+                                 </a>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!----------- Ask Question Section No Css Required In This Section (All Css Classes From Bootstrap4) ----------->
+        <section class="mt-5 pt-5 pb-5 mb-5" id="questions">
+            <div class="title">
+                <h1>Frequently Asked Questions</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 ml-auto">
+                        <div class="row align-items-center mb-5">
+                            <div class="col-xl-6">
+                                <div id="accordion">
+                                    <!---- The First Activities ---->
+                                    <div class="card mb-3">
+                                        <div class="card-header">
+                                            <div class="bg-white text-dark text-left p-3" data-toggle="collapse" data-target="#collapse">
+                                                <span> <i class="fas fa-plus mr-4"></i> </span>
+                                                What do I need to get started?
+                                            </div>
+                                        </div>
+                                        <div class="collapse fade " id="collapse" data-parent="#accordion">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite.
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!---- The Second Activities ---->
+                                    <div class="card mb-3">
+                                        <div class="card-header">
+                                            <div class="bg-white text-dark text-left p-3" data-toggle="collapse" data-target="#collapse2">
+                                                <span> <i class="fas fa-plus mr-4"></i> </span>
+                                                What do I need to get started?
+                                            </div>
+                                        </div>
+                                        <div class="collapse fade" id="collapse2" data-parent="#accordion">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite.
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!---- The Third Activities ---->
+                                    <div class="card mb-3">
+                                        <div class="card-header">
+                                            <div class="bg-white text-dark text-left p-3" data-toggle="collapse" data-target="#collapse3">
+                                                <span> <i class="fas fa-plus mr-4"></i> </span>
+                                                What do I need to get started?
+                                            </div>
+                                        </div>
+                                        <div class="collapse fade" id="collapse3" data-parent="#accordion">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite.
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!---- The fourth Activities ---->
+                                    <div class="card mb-3">
+                                        <div class="card-header">
+                                            <div class="bg-white text-dark text-left p-3" data-toggle="collapse" data-target="#collapse4">
+                                                <span> <i class="fas fa-plus mr-4"></i> </span>
+                                                What do I need to get started?
+                                            </div>
+                                        </div>
+                                        <div class="collapse fade" id="collapse4" data-parent="#accordion">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite.
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6">
+                                <div id="accordion">
+                                    <!---- The First Activities ---->
+                                    <div class="card mb-3">
+                                        <div class="card-header">
+                                            <div class="bg-white text-dark text-left p-3" data-toggle="collapse" data-target="#collapseOne">
+                                                <span> <i class="fas fa-plus mr-4"></i> </span>
+                                                What do I need to get started?
+                                            </div>
+                                        </div>
+                                        <div class="collapse fade " id="collapseOne" data-parent="#accordion">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite.
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!---- The Second Activities ---->
+                                    <div class="card mb-3">
+                                        <div class="card-header">
+                                            <div class="bg-white text-dark text-left p-3" data-toggle="collapse" data-target="#collapseTwo">
+                                                <span> <i class="fas fa-plus mr-4"></i> </span>
+                                                What do I need to get started?
+                                            </div>
+                                        </div>
+                                        <div class="collapse fade" id="collapseTwo" data-parent="#accordion">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite.
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!---- The Third Activities ---->
+                                    <div class="card mb-3">
+                                        <div class="card-header">
+                                            <div class="bg-white text-dark text-left p-3" data-toggle="collapse" data-target="#collapseThree">
+                                                <span> <i class="fas fa-plus mr-4"></i> </span>
+                                                What do I need to get started?
+                                            </div>
+                                        </div>
+                                        <div class="collapse fade" id="collapseThree" data-parent="#accordion">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite.
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!---- The fourth Activities ---->
+                                    <div class="card mb-3">
+                                        <div class="card-header">
+                                            <div class="bg-white text-dark text-left p-3" data-toggle="collapse" data-target="#collapseFour">
+                                                <span> <i class="fas fa-plus mr-4"></i> </span>
+                                                What do I need to get started?
+                                            </div>
+                                        </div>
+                                        <div class="collapse fade" id="collapseFour" data-parent="#accordion">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite. 
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elite.
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--- Footer --->
+
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="footer__title">Links</div>
+                        <ul class="unstyled-list">
+                            <li> <a href="index.html">Home</a></li>
+                            <li> <a href="#about">About</a></li>
+                            <li> <a href="#projects">Projects</a></li>
+                            <li> <a href="#vedios">Vedios</a> </li>
+                            <li> <a href="#questions">Questions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer__title">Contact us</div>
+                        <ul class="unstyled-list">
+                            <li><i class="fas fa-phone mr-3 text-primary"></i>  (+02) 01033293899 </li>
+                            <li><i class="fas fa-mail-bulk mr-3 text-primary"></i> 4soft@gmail.com </li>
+                            <li> <i class="fas fa-map-marker-alt mr-3 text-primary"></i>  Menia - dmaris - Abeag elry </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="footer__title">Follow Us</div>
+                        <ul class="unstyled-list third">
+                            <li style="display: inline-block;" class="face"> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li style="display: inline-block;" class="twi"><a href="#"><i class="fab fa-twitter-square"></i></a></li> <br>
+                            <li style="display: inline-block;" class="goog"> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li style="display: inline-block;" class="insta"> <a href="#"> <i class="fab fa-instagram"></i> </a> </li><br>
+                            <li style="display: inline-block;" class="linked"> <a href="#"> <i class="fab fa-linkedin-in"></i> </a></li> 
+                            <li style="display: inline-block;" class="youtu"> <a href="#"> <i class="fab fa-youtube"></i> </a></li> <br>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="footer__title">4SOFT ON</div>
+                        <div class="d-flex justify-content-center">
+                            <ul class="unstyled-list third ">
+                                <li class="whats"> <a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                <li class="slack"></li>
+                                <li class="telegram"> <a href="#"><i class="fab fa-telegram"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2 pt-3">
+                        <div class="text-center">
+                            <img src="images/Sales Link png.png" style="width: 150px;" alt="">
+                            <div>
+                                © 2020 4SOFT. <br>
+                                All rights reserved.
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+
+
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+
+              <!--Content-->
+                <div class="modal-content">
+                    <!--Body-->
+                    <div class="modal-body mb-0 p-0">
+        
+                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3PDXmYoF5U"
+                            allowfullscreen></iframe>
+                        </div>
+            
+                    </div>
+            
+                    <!--Footer-->
+                    <div class="modal-footer justify-content-center">
+                        <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+                        <!--Twitter-->
+                        <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+                        <!--Google +-->
+                        <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+                        <!--Linkedin-->
+                        <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+            
+                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4 pt-3 pb-3 pl-5 pr-5"  data-dismiss="modal">Close</button>
+        
+                    </div>
+      
+                </div>      
+            </div>
+        </div>
+
+
+
+        <!-----------------  Register Modal  ------------->
+
+        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document" >
+              <div class="modal-content" style="background: none rgb(245, 249, 250);">
+                <div class="modal-body">
+                  <div class="col-md-8 offset-md-2 p-4 text-center">
+                    <h2 class="h2 p-5"> Sign Up to continue</h2>
+                    <img src="images/final logo-06.png" class="rounded pb-4" alt="" style="width: 80px;">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" class="form-control mb-2 p-3">
+                        <input type="email" placeholder="Your Email" class="form-control mb-2 p-3">
+                        <input type="submit" name="submitForm" id="" class="btn btn-lg pl-5 pr-5 pt-2 pb-2 get-link2 mr-4 btn-primary" value="Continue">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </script>
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+		<script src="../js/wow.min.js"></script>
+        <script>
+          new WOW().init();
+        </script>
+        <script src="js/jQuery3.3.1.min.js"></script>
+        <!---Slider Laibiray-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/sliderComponents.js"></script>
+        <script src="js/e.js"></script>
+	</body>
+    
+
+
+</html>

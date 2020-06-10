@@ -1,0 +1,25 @@
+.portflio-main {
+  background-image: url("../images/portifolio.jpg");
+  background-size: cover;
+  width: 100%;
+}
+
+.portflio {
+  margin-top: 19rem;
+}
+
+.card-portflio {
+  background: none #f9fbfc;
+  border-radius: 8px;
+  box-shadow: rgba(84, 89, 94, 0.2) 0px 2px 4px 0px;
+}
+
+.read-more {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+  color: #00527f;
+  border-radius: 120px;
+}

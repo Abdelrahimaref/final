@@ -1,0 +1,64 @@
+/* edit bootstrap 4 */
+
+/* start edit navbar */
+.navbar-light {
+    padding: 15px 0;
+}
+.navbar-light .navbar-brand {
+    text-transform: uppercase;
+}
+.nav-item:last-of-type {
+    padding: 0 20px;
+    margin-left: 5px;
+    background-color: #fff;
+    border-radius: 20px;
+    -o-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    font-weight: 500;
+    font-size: medium;    
+}
+.navbar-light .navbar-nav .nav-link i {
+    vertical-align: bottom;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.dropdown-menu {
+    top: 135%;
+    left: auto;
+    right: 0;
+}
+/* end edit navbar */
+
+/* start edit carousel */
+
+.carousel-inner {
+    overflow: visible;
+}
+.carousel-control-prev span, .carousel-control-next span {
+    color: #555794;
+    font-size: 45px;
+}
+.carousel-control-prev {
+    left: -45px;
+    width: auto;
+}
+.carousel-control-next {
+    right: -45px;
+    width: auto;
+}
+/* end edit carousel */
+
+/* .custom-file-label::after */
+.custom-file-label::after {
+    width: 100%;
+    border: none;
+    text-align: center;
+    color: rgb(0, 82, 127);
+    background-color: #fff;
+}

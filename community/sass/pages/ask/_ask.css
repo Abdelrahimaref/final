@@ -1,0 +1,63 @@
+.ask-section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  margin-bottom: 10rem;
+}
+
+.ask-card {
+  min-height: 370px;
+  width: 318px;
+  background-color: #f5f9fa;
+  border-radius: 0px;
+}
+
+.ask-card-list li {
+  height: 40px !important;
+  overflow: visible;
+  padding-bottom: 0px;
+  font-family: Lato;
+  font-size: 18px;
+  color: #333333;
+  line-height: 1.4;
+  border-radius: 0px;
+  width: 213px;
+  left: 0px;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  padding: 3rem;
+}
+
+/********* Question Section **********/
+.ask-question .q-icon {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 900;
+  color: #bc8ecc;
+  line-height: 1.6;
+  border-radius: 0px;
+  word-break: break-word;
+}
+
+.ask-question .q-ask {
+  font-family: 'Roboto';
+  font-size: 21px;
+  color: black;
+  line-height: 1.6;
+  border-radius: 0px;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.ask-question .answer {
+  font-family: 'Roboto';
+  font-size: 17px;
+  color: #333333;
+  line-height: 1.6;
+  border-radius: 0px;
+}
+
+.ask-card-list li {
+  cursor: pointer;
+}

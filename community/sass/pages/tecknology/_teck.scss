@@ -1,0 +1,48 @@
+.card-teck {
+    width: 880px;
+    background-color: rgb(249, 251, 252);
+    border-radius: 8px;
+    box-shadow: rgba(84, 89, 94, 0.4) 0px 24px 34px 0px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+.icon-card {
+    height: 70px;
+    width: 70px;
+    background-color: #FFF;
+    border-radius: 120px;
+    transition: background 200ms linear 0s;
+    cursor: pointer;
+    margin-right: 2rem;
+
+    img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+.icon-card--active {
+    background: none rgb(25, 204, 189);
+}
+.card-teck--content {
+    padding: 5rem;
+    padding-left: 9rem;
+
+    &__title {
+        overflow: visible;
+        font-family: "Open Sans";
+        font-size: 24px;
+        color: rgb(0, 0, 0);
+        line-height: 1.5;
+        border-radius: 0px;
+        word-break: break-word;
+        margin-bottom: 2rem;
+    }
+    &__subtitle {
+        overflow: visible;
+        font-family: "Open Sans";
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.75);
+        line-height: 1.5;
+        border-radius: 0px;
+    }
+}

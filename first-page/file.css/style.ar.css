@@ -1,0 +1,206 @@
+
+a {
+    color: #373339 !important;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/*Start Globale classes ar style*/
+.txt-right {
+    text-align: right !important
+}
+.dir-right {
+    direction: rtl !important
+}
+.dir-left {
+    direction: ltr !important
+}
+
+/*start class flex-box & prevfix*/
+.d-fx {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+}
+.fx-row-r {
+    -moz-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+    -o-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+/*End Globale classes ar style*/
+
+/*Glovale style element*/
+/* ul {
+    padding-right: 0;
+} */
+
+/* start navbar ar */
+.navbar-light ul {
+    margin-left: 0 !important;
+    margin-right: auto;
+}
+.nav-item:last-of-type {
+    margin-left: 0;
+    margin-right: 5px;
+}
+.navbar-nav .dropdown-menu {
+    left: 0;
+    right: auto;
+}
+/* end navbar ar */
+
+/* start our ar */
+.our .text p {
+    padding-right: 0;
+    padding-left: 165px;
+}
+/* end our ar */
+
+/* start our-work ar */
+
+.our-work .box_list .view_2 .text {
+    padding: 26px 0 0 465px;
+}
+.our-work .box_list .view_2 .text span {
+    left: 25px;
+    right: auto;
+}
+/* end our-work ar */
+
+/* start team ar */
+.team .career h2 span {
+    right: 44px;
+    left: 0;
+}
+.form-check {
+    padding-left: 0;
+}
+.form-check-input {
+    margin-left: 0 !important;
+    margin-right: -1.25rem;
+}
+/* start team ar */
+
+/* start footer Section*/
+.footer {
+    background-color: #f5f9fa;
+    padding: 5rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  .footer__title {
+    font-family: "Roboto";
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 1.6;
+    border-radius: 0px;
+    word-break: break-word;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+  }
+  .footer li {
+    font-family: "Roboto";
+    pointer-events: auto;
+    font-family: Roboto;
+    font-size: 18px;
+    color: #5c5a7c;
+    line-height: 1.6;
+    border-radius: 0px;
+    font-style: normal;
+    margin-top: 1rem;
+  }
+  .footer .third li {
+    height: 34px;
+    width: 34px;
+    border-radius: 100px;
+    padding-top: 6px;
+  }
+  .footer .third .face {
+    background: #3b5998;
+  }
+  .footer .third .twi {
+    background: #1da1f2;
+  }
+  .footer .third .goog {
+    background: #db3236;
+  }
+  .footer .third .linked {
+    background: #0077b5;
+  }
+  .footer .third .insta {
+    background: linear-gradient(55deg, #ffc838 0%, rgba(251, 57, 88, 0.85) 50%, #8134af 100%);
+  }
+  .footer .third .youtu {
+    background: red;
+  }
+  .footer .third .whats {
+    background-color: #25d366;
+  }
+  .footer .third .telegram {
+    background-color: #4083a9;
+  }
+  .footer .third .slack {
+    background-image: url("../image/slack-new-logo.svg");
+    height: 34px;
+    width: 34px;
+    background-color: rgba(255, 255, 255, 0);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 0px;
+  }
+  .footer .third a {
+    pointer-events: auto;
+    font-family: Lato;
+    font-size: 14px;
+    color: #4083a9;
+    line-height: 1;
+    border-radius: 0px;
+    font-weight: normal;
+    font-style: normal;
+  }
+  .footer .third i {
+    text-align: center;
+    cursor: inherit;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 0px;
+  }
+
+
+
+@media (max-width: 768px) {
+    /* start our-work media query ar */
+    .our-work .box_list .view_2 .text {
+        text-align: left;
+        padding: 0 !important;
+    }
+    .our-work .box_list .view_2 .text p {
+        text-align: right;
+    }
+    /* end our-work media query ar */
+
+    /* start pre-footer media query ar */
+    .pre-footer .offices  {
+        text-align: center !important;
+    }
+    .pre-footer .offices  ul {
+        justify-content: center!important;
+    }
+
+    .pre-footer .media   {
+        text-align: center !important;
+        justify-content: center !important;
+    }
+    /* end pre-footer media query ar */
+}
+

@@ -1,0 +1,91 @@
+.footer {
+    background-color: #f5f9fa;
+    padding: 5rem;
+
+    &__title {
+        font-family: 'Roboto';
+        font-size: 17px;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        line-height: 1.6;
+        border-radius: 0px;
+        word-break: break-word;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    li {
+        font-family: 'Roboto';
+        pointer-events: auto;
+        font-family: Roboto;
+        font-size: 18px;
+        color: rgb(92, 90, 124);
+        line-height: 1.6;
+        border-radius: 0px;
+        font-style: normal;
+        margin-top: 1rem;
+    }
+    .third {
+        li {
+            height: 34px;
+            width: 34px;
+            border-radius: 100px;
+            padding-top: 6px;
+        }
+        .face {
+            background:$face-book;
+        }
+        .twi {
+            background:$twitter;
+        }
+        .goog {
+            background:$google
+        }
+        .linked {
+            background:$linked-in
+        }
+        .insta {
+            background:$instagram
+        }
+        .youtu {
+            background:$youtube
+        }
+        .whats {
+            background-color:$whatsapp
+        }
+        .telegram {
+            background-color: $telegram;
+        }
+        .slack {
+            background-image: url('../images/slack-new-logo.svg');
+            height: 34px;
+            width: 34px;
+            background-color: rgba(255, 255, 255, 0);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            border-radius: 0px;
+        }
+        a {
+            pointer-events: auto;
+            font-family: Lato;
+            font-size: 14px;
+            color: rgb(64, 131, 169);
+            line-height: 1;
+            border-radius: 0px;
+            font-weight: normal;
+            font-style: normal;
+        }
+        i {
+            text-align: center;
+            cursor: inherit;
+            background: none;
+            border: none;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            border-radius: 0px;
+        }
+    }
+}

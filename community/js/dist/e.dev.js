@@ -21,14 +21,51 @@ $('.box-agile-2').click(function () {
 
 var iNum = 0;
 var xPrice = 0;
+var countCheck = 0;
 $('.radio-dsktop').click(function () {
   if ($(this).prop("checked") == true) {
+    countCheck++;
+
+    if (countCheck > 0) {
+      setTimeout(function () {
+        $('.box--image--mob').fadeOut(300);
+      }, 100);
+      setTimeout(function () {
+        $('.box--image--mob--b').fadeIn(400);
+      }, 400);
+    } else if (countCheck == 0) {
+      setTimeout(function () {
+        $('.box--image--mob--b').fadeOut(300);
+      }, 100);
+      setTimeout(function () {
+        $('.box--image--mob').fadeIn(800);
+      }, 400);
+    }
+
     iNum = iNum + 1;
     $('.num--box').text(iNum);
-    $(".box--p").after('<div class=" ' + $(this).val() + ' d-flex justify-content-between mt-3 mb-3">' + '<img class=" ' + $(this).val() + '" style="width:25px" src =\"images/desktop/' + $(this).val() + '.png' + '">' + '<li class=' + $(this).val() + '>' + $(this).val() + '</li>' + '</div>');
+    $(".box--p").after('<div class=" p-1 pl-3 text-primary ' + $(this).val() + ' mt-3 mb-3 shadow bg-white ">' + '<li class=' + $(this).val() + '>' + $(this).val() + '</li>' + '</div>');
     xPrice = parseInt(xPrice) + parseInt($(this).parent().parent().attr('value'));
     $('.box--price').text(xPrice);
   } else if ($(this).prop("checked") == false) {
+    countCheck--;
+
+    if (countCheck > 0) {
+      setTimeout(function () {
+        $('.box--image--mob').fadeOut(100);
+      }, 100);
+      setTimeout(function () {
+        $('.box--image--mob--b').fadeIn(100);
+      }, 400);
+    } else if (countCheck == 0) {
+      setTimeout(function () {
+        $('.box--image--mob--b').fadeOut(300);
+      }, 100);
+      setTimeout(function () {
+        $('.box--image--mob').fadeIn(800);
+      }, 400);
+    }
+
     iNum = iNum - 1;
     $('.num--box').text(iNum);
     var ele = $(this).val();

@@ -460,6 +460,10 @@ h4 {
   .best-project {
     margin-top: 50rem !important;
   }
+
+  .main-slider__social {
+    display: none;
+  }
 }
 @media (max-width: 576px) {
   .left {

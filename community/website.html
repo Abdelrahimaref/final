@@ -32,6 +32,19 @@
 
 
         <style>
+        .dropdown-toggle::after {
+            display: none;
+        }
+        .nav-item:last-of-type {
+            padding: 0 20px;
+            margin-left: 5px;
+            background: -webkit-linear-gradient(left, #9473dd 0%, #1ac9e4 100%);
+            border-radius: 20px;
+            -o-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+        }
             @media(max-width:992px) {
                 .phone--apear {
                     display: block !important;
@@ -94,9 +107,9 @@
                                 </li>
                                 <li class="nav-item dropdown "><a class="nav-link dropdown-toggle nav-contact" style="margin-right: 2rem;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
                                     <div class="dropdown-menu txt-right" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="index.html">Web Development</a>
-                                        <a class="dropdown-item" href="../sales/index.html">Mobile Development</a>
-                                        <a class="dropdown-item" href="Blogurs.html">Desktop Development</a>
+                                        <a class="dropdown-item" href="website.html">Web Development</a>
+                                        <a class="dropdown-item" href="mobile.html">Mobile Development</a>
+                                        <a class="dropdown-item" href="desktop.html">Desktop Development</a>
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown "><a class="nav-link dropdown-toggle nav-contact" style="font-size: 22px; margin-top: -9px;"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">...</a>
@@ -105,7 +118,8 @@
                                         <a class="dropdown-item" href="../sales/index.html">Sales Link</a>
                                         <a class="dropdown-item" href="Blogurs.html">Blogurs</a>
                                     </div>
-                                </li>                        
+                                </li>  
+                                <li class="nav-item shadow-sm "><a class="nav-link nav-contact p-3" style="color: #FFF !important;" href="#">Get Start</a></li>                      
                             </ul>
                         </div>
                     </div>

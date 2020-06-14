@@ -43,7 +43,9 @@ $('.radio-dsktop').click(function(){
     }
     iNum = iNum + 1 ;
     $('.num--box').text(iNum);
-    $(".box--p").after('<div class=" p-1 pl-3 text-primary '+$(this).val()+' mt-3 mb-3 shadow bg-white ">' + '<li class=' + $(this).val() +'>' + $(this).val()  +'</li>' + '</div>');
+    $(".box--p").after('<div class=" p-1 pl-3 text-primary '+$(this).val()+' mt-3 mb-4 shadow bg-white ">' + '<li class=' + $(this).val() +'>' + $(this).val()  +'</li>' + '</div>');
+    $(".box--p2").after('<div class=" '+$(this).val()+' d-flex justify-content-between mt-3 mb-4">' + '<img class=" ' + $(this).val()+'" style="width:25px" src =\"images/desktop/'+$(this).val()+'.png'+'">' + '<li class=' + $(this).val() +'>' + $(this).val()  +'</li>' + '</div>');
+    $(".box--p3").after('<div style="font-size:15px" class=" p-1 pl-3'+$(this).val()+' mt-3 mb-4">' + '<li class=' + $(this).val() +'>' + $(this).val()  +'</li>' + '</div>');
     xPrice = parseInt(xPrice) + parseInt($(this).parent().parent().attr('value'));
     $('.box--price').text(xPrice);
   }
@@ -72,6 +74,40 @@ $('.radio-dsktop').click(function(){
     xPrice = parseInt(xPrice) - parseInt($(this).parent().parent().attr('value'));
     $('.box--price').text(xPrice);
   }
+});
+
+/***************  Category Drop Down *************/
+
+var c =1 ; 
+$('.cat-drop').mouseup(function(){
+  if(c == 1) {
+    $('.drop').fadeIn(300);
+    c=2 ; 
+  }
+  else if(c==2) {
+  $('.drop').fadeOut(300);
+    c=1;
+  }
+})
+
+/*************  Appears Lists as specific category ***********/
+
+$('.web-btn33').click(function(){
+  $('.web2').fadeIn(200);
+  $('.mob2').fadeOut(200);
+  $('.desk2').fadeOut(200);
+});
+
+$('.mob-btn44').click(function(){
+  $('.mob2').fadeIn(200);
+  $('.web2').fadeOut(200);
+  $('.desk2').fadeOut(200);
+});
+
+$('.desk-btn55').click(function(){
+  $('.desk2').fadeIn(200);
+  $('.mob2').fadeOut(200);
+  $('.web2').fadeOut(200);
 });
 
 /********** technology page  *******/
@@ -237,7 +273,7 @@ $('.support-question').click(function(){
 
 /*********** team card in about page *********/
 var f = 1 ; 
-$('.post-all').hover(function(){
+$('.post-all').click(function(){
   var pos = $(this);
   if(f==1) {
     setTimeout(() => {

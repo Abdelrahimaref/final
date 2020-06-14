@@ -10,14 +10,27 @@
     <link rel="stylesheet" href="../file.css/bootstrap-editor.css">
     <link rel="stylesheet" href="../file.css/all.css">
     <link rel="stylesheet" href="../file.css/style.css">
+    <link rel="stylesheet" href="../file.css/main.css">
     <link rel="stylesheet" href="../file.css/style.ar.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">        
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">      
   </head>
 
   <style>
     .w-saying .box_say span i {
-    margin: 0px 2px !important;
-  }
+      margin: 0px 2px !important;
+    }
+    .slider {
+      padding-top: 7rem;
+    }
+    .footer__title {
+      color: #FFF;
+    }
+    #footer a , #footer li {
+        color: #999 !important;
+    }
   </style>
 
   <body>
@@ -27,48 +40,62 @@
       <nav class="navbar navbar-expand-lg navbar-light">
         <!-- container B4-->
         <div class="container">
-                 <!-- Image and text --><a class="navbar-brand" href="#"><img class="d-inline-block align-top" src="../image/4soft-2.png" width="30" height="30" alt="" loading="lazy">4soft</a>
+                 <!-- Image and text --><a class="navbar-brand" href="#"><img class="d-inline-block align-top" src="../image/final logo-06.png" style="width:120px" alt="" loading="lazy"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto"></ul>
             <div class="text-right">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="../../community/about.html">Home<span class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="../../community/about.html">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="../../community/ask.html"> FAQS </a></li>
-                <li class="nav-item"><a class="nav-link" href="../../community/technology.html">Technology  </a></li>
-                <li class="nav-item"><a class="nav-link" href="../../community/portfolio.html">Portfolio  </a></li>
-                <li class="nav-item"><a class="nav-link" href="../../community/contact.html">Contact  </a></li>
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Products </a>
+                <li class="nav-item pr-3"><a class="nav-link nav-contact" href="../../community/about.html">Home<span class="sr-only">(current)</span></a></li>
+                <li class="nav-item pr-3"><a class="nav-link nav-contact" href="../../community/about.html">About Us</a></li>
+                <li class="nav-item pr-3"><a class="nav-link nav-contact" href="../../community/ask.html"> FAQS </a></li>
+                <li class="nav-item pr-3"><a class="nav-link nav-contact" href="../../community/technology.html">Technology  </a></li>
+                <li class="nav-item pr-3"><a class="nav-link nav-contact" href="../../community/portfolio.html">Portfolio  </a></li>
+                <li class="nav-item pr-3"><a class="nav-link nav-contact" href="../../community/contact.html">Contact  </a></li>
+                <li class="nav-item dropdown "><a class="nav-link dropdown-toggle nav-contact" style="margin-right: 2rem;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
                   <div class="dropdown-menu txt-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="../../community/index.html">Sales Link</a>
-                    <a class="dropdown-item" href="../../sales/index.html">Courses Community</a>
+                      <a class="dropdown-item" href="../../community/website.html">Web Development</a>
+                      <a class="dropdown-item" href="../../community/mobile.html">Mobile Development</a>
+                      <a class="dropdown-item" href="../../community/desktop.html">Desktop Development</a>
                   </div>
-                </li>
-                <li class="nav-item shadow-sm"><a class="nav-link" href="#">Get Start</a></li>
+              </li>
+              <li class="nav-item dropdown pr-3 "><a class="nav-link dropdown-toggle nav-contact" style="font-size: 22px; margin-top: -9px;"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">...</a>
+                  <div class="dropdown-menu txt-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="../../community/index.html">4SOFT Developers </a>
+                      <a class="dropdown-item" href="../../sales/index.html">Sales Link</a>
+                      <a class="dropdown-item" href="../../community/Blogurs.html">Blogurs</a>
+                  </div>
+              </li> 
+              <li class="nav-item shadow-sm"><a class="nav-link nav-contact p-3" href="#">Get Start</a></li>
               </ul>
             </div>
 
           </div>
         </div>
       </nav>
-      <div class="pre-header">         
-        <!-- container B4-->
-        <div class="container"> 
-          <!-- grid system B4-->
-          <div class="row fx-row r ">
-            <div class="col-12 col-12 col-md-6 d-flex align-items-center py-5">
-              <div class="text">
-                <h3>WEB SOFTWARE & NATIVE APPS</h3>
-                <h1>BUILT WITHOUT CODE</h1>
-                <p>We use latest no-code development technology to build startups and products up to 5 times faster and less costly. </p>
-                <button class="btn bg-btn">TELL ME MORE</button>
-              </div>
+
+
+      <div class="slider" style="background-color: rgb(245, 249, 250);padding-bottom: 8rem; height: auto;">
+        <div class="slider__content">
+            <div class="container">
+                <div class="row">   
+                    <div class="col-lg-6 slider__content-con mobile-content" style="padding-top: 12rem;">
+                        <div>
+                            <div class="main-title" style="font-size: 30px;margin-bottom: 1rem; font-family: 'Open Sans'; font-weight: 700; ">
+                              WEB SOFTWARE & NATIVE APPS
+                              <span style="color:#40aacf;">BUILT WITHOUT CODE
+                              </span> 
+                            </div>
+                            <div class="def-con" style="color: rgb(68, 68, 95);font-size:20px">
+                              We Use Latest No-Code Development Technology To Build Startups And Products Up To 5 Times Faster And Less Costly.
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center">
+                        <img src="../image/mob.png" alt=""  data-toggle="modal" data-target="#modal1"  style="cursor: pointer; width:100%;">
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-12 col-md-6 py-5">
-              <div class="content_img"><img src="../image/web_servers.png" alt=""></div>
-            </div>
-          </div>
         </div>
       </div>
     </header>
@@ -344,14 +371,16 @@
             <h1>team</h1>
           </div>
           <div class="col-sm-12 col-md-2"></div>
-          <div class="col-sm-12 col-md-4 career">
+          <div class="col-sm-12 col-md-4 career team-btn-1">
             <h2>11<span>PROJECTS & PRODUCTS</span></h2>
           </div>
-          <div class="col-sm-12 col-md-4 career">
+          <div class="col-sm-12 col-md-4 career team-btn-2">
             <h2>12<span>DESIGN & DEVELOPMENT</span></h2>
           </div>
           <div class="col-sm-12 col-md-2"></div>
-          <div class="col-sm-12">
+
+          <!-------- Product Team -------->
+          <div class="col-sm-12 team-1">
             <!-- use carousel B4-->
             <div class="carousel slide carousel-fade" id="carouselExampleFade_2" data-ride="carousel">
               <div class="carousel-inner">
@@ -480,6 +509,138 @@
               <a class="carousel-control-next d-none d-sm-flex" href="#carouselExampleFade_2" role="button" data-slide="next"><span><i class="fas fa-chevron-right"></i></span><span class="sr-only">Next</span></a>
             </div>
           </div>
+          <!-------- Design Team -------->
+          <div class="col-sm-12 team-2" style="display: none;">
+            <!-- use carousel B4-->
+            <div class="carousel slide carousel-fade" id="carouselExampleFade_2" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-3 my-5">
+                      <div class="box_team">
+                        <div class="box_img"><img src="../image/usar.jpg" alt="" srcset=""></div>
+                        <div class="box_text">
+                          <h6 class="mt-3">Cristina</h6><span class="mb-3">Bubble Designer and Developer</span>
+                          <p>Successful serial entrepreneur in the past, Levon now focuses on making web & mobile development fast & affordable. When not in the office, he most likely entertains his twins.🙂</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-3 my-5 d-none d-md-block">
+                      <div class="box_team">
+                        <div class="box_img"><img src="../image/usar.jpg" alt="" srcset=""></div>
+                        <div class="box_text">
+                          <h6 class="mt-3">Cristina</h6><span class="mb-3">Bubble Designer and Developer</span>
+                          <p>Successful serial entrepreneur in the past, Levon now focuses on making web & mobile development fast & affordable. When not in the office, he most likely entertains his twins.🙂</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-3 my-5 d-none d-md-block">
+                      <div class="box_team">
+                        <div class="box_img"><img src="../image/usar.jpg" alt="" srcset=""></div>
+                        <div class="box_text">
+                          <h6 class="mt-3">Cristina</h6><span class="mb-3">Bubble Designer and Developer</span>
+                          <p>Successful serial entrepreneur in the past, Levon now focuses on making web & mobile development fast & affordable. When not in the office, he most likely entertains his twins.🙂</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 d-none d-lg-block my-5">
+                      <div class="box_team">
+                        <div class="box_img"><img src="../image/usar.jpg" alt="" srcset=""></div>
+                        <div class="box_text">
+                          <h6 class="mt-3">Cristina</h6><span class="mb-3">Bubble Designer and Developer</span>
+                          <p>Successful serial entrepreneur in the past, Levon now focuses on making web & mobile development fast & affordable. When not in the office, he most likely entertains his twins.🙂</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-3 my-5">
+                      <div class="box_team">
+                        <div class="box_img"><img src="../image/usar_2.jpg" alt="" srcset=""></div>
+                        <div class="box_text">
+                          <h6 class="mt-3">Cristina</h6><span class="mb-3">Bubble Designer and Developer</span>
+                          <p>Successful serial entrepreneur in the past, Levon now focuses on making web & mobile development fast & affordable. When not in the office, he most likely entertains his twins.🙂</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-3 my-5 d-none d-md-block">
+                      <div class="box_team">
+                        <div class="box_img"><img src="../image/usar_2.jpg" alt="" srcset=""></div>
+                        <div class="box_text">
+                          <h6 class="mt-3">Cristina</h6><span class="mb-3">Bubble Designer and Developer</span>
+                          <p>Successful serial entrepreneur in the past, Levon now focuses on making web & mobile development fast & affordable. When not in the office, he most likely entertains his twins.🙂</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-3 my-5 d-none d-md-block">
+                      <div class="box_team">
+                        <div class="box_img"><img src="../image/usar_2.jpg" alt="" srcset=""></div>
+                        <div class="box_text">
+                          <h6 class="mt-3">Cristina</h6><span class="mb-3">Bubble Designer and Developer</span>
+                          <p>Successful serial entrepreneur in the past, Levon now focuses on making web & mobile development fast & affordable. When not in the office, he most likely entertains his twins.🙂</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 d-none d-lg-block my-5">
+                      <div class="box_team">
+                        <div class="box_img"><img src="../image/usar.jpg" alt="" srcset=""></div>
+                        <div class="box_text">
+                          <h6 class="mt-3">Cristina</h6><span class="mb-3">Bubble Designer and Developer</span>
+                          <p>Successful serial entrepreneur in the past, Levon now focuses on making web & mobile development fast & affordable. When not in the office, he most likely entertains his twins.🙂</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-3 my-5">
+                      <div class="box_team">
+                        <div class="box_img"><img src="../image/usar.jpg" alt="" srcset=""></div>
+                        <div class="box_text">
+                          <h6 class="mt-3">Cristina</h6><span class="mb-3">Bubble Designer and Developer</span>
+                          <p>Successful serial entrepreneur in the past, Levon now focuses on making web & mobile development fast & affordable. When not in the office, he most likely entertains his twins.🙂</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-3 my-5 d-none d-md-block">
+                      <div class="box_team">
+                        <div class="box_img"><img src="../image/usar.jpg" alt="" srcset=""></div>
+                        <div class="box_text">
+                          <h6 class="mt-3">Cristina</h6><span class="mb-3">Bubble Designer and Developer</span>
+                          <p>Successful serial entrepreneur in the past, Levon now focuses on making web & mobile development fast & affordable. When not in the office, he most likely entertains his twins.🙂</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-3 my-5 d-none d-md-block">
+                      <div class="box_team">
+                        <div class="box_img"><img src="../image/usar.jpg" alt="" srcset=""></div>
+                        <div class="box_text">
+                          <h6 class="mt-3">Cristina</h6><span class="mb-3">Bubble Designer and Developer</span>
+                          <p>Successful serial entrepreneur in the past, Levon now focuses on making web & mobile development fast & affordable. When not in the office, he most likely entertains his twins.🙂</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 d-none d-lg-block my-5">
+                      <div class="box_team">
+                        <div class="box_img"><img src="../image/usar.jpg" alt="" srcset=""></div>
+                        <div class="box_text">
+                          <h6 class="mt-3">Cristina</h6><span class="mb-3">Bubble Designer and Developer</span>
+                          <p>Successful serial entrepreneur in the past, Levon now focuses on making web & mobile development fast & affordable. When not in the office, he most likely entertains his twins.🙂                                                        </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev d-none d-sm-flex" href="#carouselExampleFade_2" role="button" data-slide="prev"><span><i class="fas fa-chevron-left"></i></span><span class="sr-only">Previous</span></a>
+              <a class="carousel-control-next d-none d-sm-flex" href="#carouselExampleFade_2" role="button" data-slide="next"><span><i class="fas fa-chevron-right"></i></span><span class="sr-only">Next</span></a>
+            </div>
+          </div>
+
+
           <div class="col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center align-items-center bg-white py-4">
             <div class="featured my-lg-5">
               <h2>Platforms</h2>
@@ -501,218 +662,290 @@
     <!-- end section  team-->
     
     <!-- start section type project-->
-    <section class="type_project">
-      <!-- conatiner B4-->
+    <div class="best-project">
       <div class="container">
-        <!-- use grid system B4-->
-        <div class="row position-relative">
-          <div class="col-sm-12">
-            <h1>WHAT TYPE OF PROJECT WORKS BEST FOR YOU?</h1>
+          <div class="contact-content__title w-100 text-center">
+              WHAT TYPE OF PROJECT WORKS BEST FOR YOU?
           </div>
-          <div class="col-sm-12 col-md-6 my-5 position-relative">
-            <div class="box_project active">
-              <h4 class="my-4">AGILE PROJECT</h4><a class="mb-4" href="">For complex projects with full customization and unique design</a>
-              <div class="box_list_0">
-                <ul>
-                  <li>Flexible development process</li>
-                  <li>Fixed price billing</li>
-                  <li>Delivered in 3-5 weeks</li>
-                  <li>Dedicated Project Manager</li>
-                  <li>Pay by milestone</li>
-                </ul>
-                <button class="btn bg-btn">choose me</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 my-5 position-relative">
-            <div class="box_express">
-              <h4 class="my-3">10-DAY EXPRESS</h4><a class="mb-3" href="">Fastest time to market for only</a><span>$7500</span>
-              <div class="box_list_1">
-                <ul>
-                  <li>Minimum Viable Product. </li>
-                  <li>10 day development cycle.</li>
-                  <li>Dedicated Project Manager.</li>
-                  <li>Streamlined Process</li>
-                  <li>fixed rate. </li>
-                </ul>
-                <button class="btn bg-btn"></button>
-              </div>
-              <div class="box_list_2">
-                <ul>
-                  <li>Minimum Viable Product. </li>
-                  <li>10 day development cycle.</li>
-                  <li>Low flat rate. </li>
-                  <li>Dedicated Project Manager.</li>
-                  <li>Streamlined Process</li>
-                </ul>
-                <button class="btn bg-btn"></button>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 mx-auto shadow contact">
-            <div class="box_contact">
-              <h4>LET'S BUILD SOMETHING AWESOME</h4>
-              <div class="box_plan">
-                <div class="m_box_project active">
-                  <h6><i class="fas fa-check"></i>AGILE PROJECT</h6><span>Full flexibility for complex projects with per hour billing</span>
-                </div>
-                <div class="m_box_express">
-                  <h6><i class="fas fa-check"></i>10 DAY EXPRESS</h6><span>Fastest time to market for only <a href="">$7500</a></span>
-                </div>
-              </div>
-              <form>
-                <!-- use form group B4-->
-                <div class="form-row">
-                  <div class="form-group col-md-6 mt-3">
-                    <input class="form-control" type="text" placeholder="First Name">
-                  </div>
-                  <div class="form-group col-md-6 mt-3">
-                    <input class="form-control" type="text" placeholder="Last Name">
-                  </div>
-                  <div class="form-group col-md-12">
-                    <input class="form-control" type="email" placeholder="What's your email?">
-                  </div>
-                  <div class="form-group col-md-12">
-                    <textarea class="form-control w-100" name="" cols="30" rows="10" placeholder="Please provide some details"></textarea>
-                  </div>
-                  <div class="form-group col-md-12 m-0">
-                    <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <div class="custom-file">
-                          <input class="custom-file-input" type="file" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                        </div>
-                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+          <div class="best-project__content">
+              <div class="row">
+                  <div class="col-md-6 d-flex justify-content-end x-600" style="height: 500px; cursor: pointer;">
+                      <div class="best-project__content-right box-con color-shadow main-card" style="margin-right: -72px;">
+                          <div class="box-con--content w-100">
+                              agile project
+                          </div>
+                          <div class="box-con--content-second w-100">
+                              For complex projects with full customization and unique design
+                          </div>
+                          <div class="list-box d-flex justify-content-center">
+                              <ul>
+                                  <li>Flex development process</li>
+                                  <li>Fixed price billing</li>
+                                  <li>Delivered in 3-5 weeks</li>
+                                  <li>Dedicated Project Manager</li>
+                                  <li>Pay by milestone</li>
+                              </ul>
+                          </div>
+                          <div class="text-center btn-box-choose">
+                              <button class="btn-choose" data-toggle="modal" data-target="#agileModal" data-controls-modal="#agileModal" data-backdrop="static" data-keyboard="false"> CHOOSE ME </button>
+                          </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group px-4 text-center">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label" for="gridCheck"><span id="gridCheck">Sign up to receive occasional tips about building apps without code</span></label>
-                  </div>
-                </div>
-                <div class="form-group col-sm-4 d-block mx-auto">
-                  <input class="form-control bg-btn text-white text-uppercase" type="submit" placeholder="What's your email?">
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end section type project-->
-    
-    <!-- start section footer-->
-    <!-- <footer>
-      <section class="subscribe">
-        <div class="container">
-          <div class="row text-center text-white">
-            <div class="col-sm-12 mt-5">
-              <h4 class="font-weight-bolder">Subscribe to our newsletter.</h4>
-            </div>
-            <div class="col-sm-12 mb-3"><span class="font-weight-light">We'll send you occasional but very useful tips about building products and startup without a single line of code</span></div>
-            <div class="col-sm-12 col-md-2"></div>
-            <div class="col-sm-12 col-md-5 email text-center text-md-right my-2">
-              <form>
-                <input type="email" name="" placeholder="What's your email?">
-              </form>
-            </div>
-            <div class="col-sm-12 col-md-4 sub text-center text-md-left my-2">
-              <form>
-                <input type="button" value="subscribe">
-              </form>
-            </div>
-            <div class="col-sm-12 col-md-1"></div>
-          </div>
-        </div>
-      </section>
-      <div class="pre-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-6 my-2 offices text-md-left text-center">
-              <ul class="list-unstyled p-0 d-flex justify-content-center justify-content-md-start">
-                <li><i class="fas fa-globe-africa"></i></li>
-                <li>Our Offices:</li>
-                <li>USA </li>
-                <li>UK</li>
-              </ul><span>2035 Sunset Lake RoadSuite B-2, Newark, DE 19702</span>
-            </div>
-            <div class="col-sm-12 col-md-6 my-2 media justify-content-md-end justify-content-center">
-              <ul class="list-unstyled p-0 d-flex">
-                <li><i class="fab fa-facebook"></i></li>
-                <li><i class="fab fa-linkedin"></i></li>
-                <li><i class="fab fa-twitter-square"></i></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer> -->
-
-    <footer class="footer text-center">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-2">
-                  <div class="footer__title">Links</div>
-                  <ul class="list-unstyled">
-                      <li> <a href="index.html">Home Page</a></li>
-                      <li> <a href="../../sales/index.html">Sales Link</a></li>
-                      <li> <a href="../../community/index.html">Courses Comunity</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-4">
-                  <div class="footer__title">Contact us</div>
-                  <ul class="list-unstyled">
-                      <li><i class="fas fa-phone mr-3 text-primary"></i>  (+02) 01033293899 </li>
-                      <li><i class="fas fa-mail-bulk mr-3 text-primary"></i> 4soft@gmail.com </li>
-                      <li> <i class="fas fa-map-marker-alt mr-3 text-primary"></i>  Menia - dmaris - Abeag elry </li>
-                  </ul>
-              </div>
-              <div class="col-md-2">
-                  <div class="footer__title">Follow Us</div>
-                  <ul class="list-unstyled third">
-                      <li style="display: inline-block;" class="face"> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                      <li style="display: inline-block;" class="twi"><a href="#"><i class="fab fa-twitter-square"></i></a></li> <br>
-                      <li style="display: inline-block;" class="goog"> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                      <li style="display: inline-block;" class="insta"> <a href="#"> <i class="fab fa-instagram"></i> </a> </li><br>
-                      <li style="display: inline-block;" class="linked"> <a href="#"> <i class="fab fa-linkedin-in"></i> </a></li> 
-                      <li style="display: inline-block;" class="youtu"> <a href="#"> <i class="fab fa-youtube"></i> </a></li> <br>
-                  </ul>
-              </div>
-              <div class="col-md-2">
-                  <div class="footer__title">4SOFT ON</div>
-                  <div class="d-flex justify-content-center">
-                      <ul class="list-unstyled third ">
-                          <li class="whats"> <a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                          <li class="slack"></li>
-                          <li class="telegram"> <a href="#"><i class="fab fa-telegram"></i></a></li>
-                      </ul>
                   </div>
 
-              </div>
-              <div class="col-md-2 pt-3">
-                  <div class="text-center">
-                      <img src="../image/Sales Link png.png" style="width: 150px;" alt="">
-                      <div>
-                          © 2020 4SOFT. <br>
-                          All rights reserved.
-
+                  <div class="col-md-6 d-flex justify-content-start x-600" style= "height: 500px; margin-top:6rem; cursor: pointer;">
+                      <div class="best-project__content-left box-con sub-card border-main sub" >
+                          <div class="box-con--content w-100">
+                              10-DAY EXPRESS
+                          </div>
+                          <div class="box-con--content-second color-2 w-100">
+                              Fastest time to market for only
+                          </div>
+                          <div class="text-center price-sub w-100 pt-3">
+                              7500LE
+                          </div>
+                          <div class="list-box d-flex justify-content-center p-3">
+                              <ul>
+                                  <li>Minimum Viable Product.</li>
+                                  <li>10 day development cycle.</li>
+                                  <li>Low flat rate. </li>
+                                  <li>Dedicated Project Manager. </li>
+                                  <li>Streamlined Process</li>
+                              </ul>
+                          </div>
+                          <div class="text-center btn-box-choose" style="margin-top: 4rem;">
+                              <button class="btn-choose color-sub" data-toggle="modal" data-target="#expressModal">CHOOSE ME</button>
+                          </div>
                       </div>
-
                   </div>
+
               </div>
 
           </div>
-
       </div>
-    </footer>
+  </div>
+
+
+  <!------------- Agile Modal ----------->
+
+  <!-- Modal -->
+  <div class="modal fade" id="agileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header border-none">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 30px;color: rgb(203, 234, 242);">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body p-5">
+                  <div class="modal-title mb-5">                           
+                      LET'S BUILD SOMETHING AWESOME
+                  </div>
+                  <div class="row justify-content-center">
+                      <div class="col-sm-6">
+                          <div class="card-modal card-color-active  mt-2 main-box-modal box-agile-1">
+                              <div class="card-modal-title w-100 text-center">
+                                 <span class="mr-2"><i class="fas fa-check active-mark" style="font-size:30px"></i></span> AGILE PROJECT
+                              </div>
+                              <div class="card-modal-sub w-100 text-center">
+                                  Full flexibility for complex projects with per hour billing
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class="card-modal card-color-not-active mt-2 sub-box-modal box-agile-2">
+                              <div class="card-modal-title w-100 text-center">
+                                 <span class="mr-2"><i class="fas fa-check active-mark" style="font-size:30px"></i></span> AGILE PROJECT
+                              </div>
+                              <div class="card-modal-sub w-100 text-center">
+                                  Full flexibility for complex projects with per hour billing
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form-content mt-5">
+                          <div class="form-group">
+                              <div class="row">
+                                  <div class="col-md-6 d-flex justify-content-end">
+                                      <input type="text" placeholder="First Name" class="form-control modal-input" style="width: 190px;" required>
+                                  </div>
+                                  <div class="col-md-6 d-flex justify-content-start">
+                                      <input type="text" placeholder="Last Name" class="form-control modal-input " style="width: 190px;" required>
+                                  </div>
+                                  <div class="col-md-12 d-flex justify-content-center">
+                                      <input type="email" placeholder="Your Email" class="form-control modal-input" style="width: 400px;" required>
+                                  </div>
+                                  <div class="col-md-12 d-flex justify-content-center">
+                                      <textarea name="" id="" class="form-control textarea-modal"placeholder="Please provide some details about your project like:          - is it a web application or a mobile app?                                   - describe the user flow and functionality    - describe the user flow and functionality- do you require integration with payment providers or  other external APIs- do you know of any reference app or web-site similar to what you would like to build"></textarea>
+                                  </div>
+                                  <div class="col-lg-12 d-flex justify-content-center form-group mt-5">
+                                      <div class="gallery-service">
+                                          <button class="btn btn-success mb-4 bg-transparent btn-photo btn-up-modal" id="src-btn2" >click to upload a file</button>
+                                          <input type="file" name="" id="file-btn2" hidden="hidden">
+                                          <span id="customTxt2"></span>
+                                      </div>
+                                  </div>
+                                  <div class="form-group  pl-5  text-center">
+                                      <div class="">
+                                        <input class="mr-2" type="checkbox" id="inp-box3" required >
+                                        <label class="" for="inp-box3">Sign up to receive occasional tips about building apps without code</label>
+                                      </div>
+                                  </div>
+                                  <div class="text-center btn-box-choose w-100" style="margin-top: 4rem;">
+                                      <button class="btn-choose color-sub">SUBMIT</button>
+                                  </div>
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+          <!------------- Express Modal ----------->
+
+  <!-- Modal -->
+  <div class="modal fade" id="expressModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header border-none">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 30px;color: rgb(203, 234, 242);">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body p-5">
+                  <div class="modal-title mb-5">                           
+                      LET'S BUILD SOMETHING AWESOME
+                  </div>
+                  <div class="row justify-content-center">
+                      <div class="col-sm-6">
+                          <div class="card-modal card-color-active  mt-2 main-box-modal box-agile-1">
+                              <div class="card-modal-title w-100 text-center">
+                                 <span class="mr-2"><i class="fas fa-check active-mark" style="font-size:30px"></i></span> AGILE PROJECT
+                              </div>
+                              <div class="card-modal-sub w-100 text-center">
+                                  Full flexibility for complex projects with per hour billing
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class="card-modal card-color-not-active mt-2 sub-box-modal box-agile-2">
+                              <div class="card-modal-title w-100 text-center">
+                                 <span class="mr-2"><i class="fas fa-check active-mark" style="font-size:30px"></i></span> AGILE PROJECT
+                              </div>
+                              <div class="card-modal-sub w-100 text-center">
+                                  Full flexibility for complex projects with per hour billing
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form-content mt-5">
+                          <div class="form-group">
+                              <div class="row">
+                                  <div class="col-md-6 d-flex justify-content-end">
+                                      <input type="text" placeholder="First Name" class="form-control modal-input" style="width: 190px;" required>
+                                  </div>
+                                  <div class="col-md-6 d-flex justify-content-start">
+                                      <input type="text" placeholder="Last Name" class="form-control modal-input " style="width: 190px;" required>
+                                  </div>
+                                  <div class="col-md-12 d-flex justify-content-center">
+                                      <input type="email" placeholder="Your Email" class="form-control modal-input" style="width: 400px;" required>
+                                  </div>
+                                  <div class="col-md-12 d-flex justify-content-center">
+                                      <textarea name="" id="" class="form-control textarea-modal"placeholder="Please provide some details about your project like:          - is it a web application or a mobile app?                                   - describe the user flow and functionality    - describe the user flow and functionality- do you require integration with payment providers or  other external APIs- do you know of any reference app or web-site similar to what you would like to build"></textarea>
+                                  </div>
+                                  <div class="col-lg-12 d-flex justify-content-center form-group mt-5">
+                                      <div class="gallery-service">
+                                          <button class="btn btn-success mb-4 bg-transparent btn-photo btn-up-modal" id="src-btn2" >click to upload a file</button>
+                                          <input type="file" name="" id="file-btn2" hidden="hidden">
+                                          <span id="customTxt2"></span>
+                                      </div>
+                                  </div>
+                                  <div class="form-group  pl-5  text-center">
+                                      <div class="">
+                                        <input class="mr-2" type="checkbox" id="inp-box3" required >
+                                        <label class="" for="inp-box3">Sign up to receive occasional tips about building apps without code</label>
+                                      </div>
+                                  </div>
+                                  <div class="text-center btn-box-choose w-100" style="margin-top: 4rem;">
+                                      <button class="btn-choose color-sub">SUBMIT</button>
+                                  </div>
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+  <footer class="contact-footer" style="background:url('../image/footer.jpg')">
+      <div class="contact-footer__main">Subscribe to our newsletter.</div>
+      <div class="contact-footer__sub mt-4">We'll send you occasional but very useful tips about building products and startup without a single line of code</div>
+      <div>
+          <div class=" d-flex justify-content-center w-100 mt-5" style="flex-wrap: wrap;">
+              <input type="email" name="" id="" placeholder="What's your email?" class="contact-footer__input mr-3 mt-3">
+              <button class="contact-footer__button mt-3">subscribe</button>
+          </div>
+      </div>
+  </footer>
+  <footer class="contact-footer">
+    <div class="contact-footer__main">Subscribe to our newsletter.</div>
+    <div class="contact-footer__sub mt-4">We'll send you occasional but very useful tips about building products and startup without a single line of code</div>
+    <div>
+        <div class=" d-flex justify-content-center w-100 mt-5" style="flex-wrap: wrap;">
+            <input type="email" name="" id="" placeholder="What's your email?" class="contact-footer__input mr-3 mt-3">
+            <button class="contact-footer__button mt-3">subscribe</button>
+        </div>
+    </div>
+</footer>
+
+<footer class="footer" id="footer" style="background-color:#192057 !important ; color: #FFF !important;">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer__title">Links</div>
+                <ul class="unstyled-list">
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#projects">Projects</a></li>
+                    <li> <a href="#vedios">Vedios</a> </li>
+                    <li> <a href="#questions">Questions</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="footer__title">Contact us</div>
+                <ul class="unstyled-list">
+                    <li><i class="fas fa-phone mr-3 text-primary"></i>  (+02) 01033293899 </li>
+                    <li><i class="fas fa-mail-bulk mr-3 text-primary"></i> 4soft@gmail.com </li>
+                    <li> <i class="fas fa-map-marker-alt mr-3 text-primary"></i>  Menia - dmaris - Abeag elry </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="footer__title">Location</div>
+                <ul class="unstyled-list">
+                    <li> <i class="fas fa-map-marker-alt mr-3 text-primary"></i>  Elmenia - Dmaris - Abrag Elry </li>
+                </ul>
+                <div class="my-map" >
+                    <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3518.7693083050153!2d30.745185585088848!3d28.1230596826216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145b24ec50c036f1%3A0x844c3768372ce7c!2z2KfYqNix2KfYrCDYp9mE2LHZiQ!5e0!3m2!1sar!2seg!4v1592129772423!5m2!1sar!2seg" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                        </div>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
   
 
     <!-- overl-lay in all page-->
     <div class="over-lay"></div>
     <script src="../file.js/popper.js"></script>
     <script src="../file.js/jquery-3.3.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="../file.js/sweetalert.min.js"></script>
     <script src="../file.js/bootstrap.min.js"></script>
     <script src="../file.js/app.js"></script>

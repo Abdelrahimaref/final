@@ -53,6 +53,12 @@
     .contact-content__title , .contact-footer__main  {
         font-size: 20px !important;
     }
+    .readmore-card {
+        height: auto !important;
+    }
+    .padding-title-responsive {
+        padding-top: 1rem !important;
+    }
 
 }
 @media(max-width:992px) {
@@ -84,6 +90,9 @@
         bottom: 14rem !important;
     }
     .slider__content-con {
+        text-align: center;
+    }
+    .padding-title-responsive {
         text-align: center;
     }
     .h1-con {

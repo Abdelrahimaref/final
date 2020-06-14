@@ -28,6 +28,22 @@
 	    <script src="js/html5shiv.min.js"></script>
         <script src="js/respond.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+        <style>
+            .dropdown-toggle::after {
+                display: none;
+            }
+            .nav-item:last-of-type {
+                padding: 0 20px;
+                margin-left: 5px;
+                background: -webkit-linear-gradient(left, #9473dd 0%, #1ac9e4 100%);
+                border-radius: 20px;
+                -o-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -webkit-border-radius: 20px;
+            }
+
+        </style>
 
 
        <!---->
@@ -36,8 +52,8 @@
 
         <!--- Header Section-->
         <div class="Nav wow fadeInUp">
-            <nav class="navbar navbar-expand-lg navbar-light nav-scroll2  fixed-top  py-4  mb-5 pl-5 pr-5" style="background-color: #FFF;">
-                <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light nav-scroll  fixed-top  py-4  mb-5 pl-5 pr-5">
+                <div class="container">
                     <img src="images/final logo-06.png" style=" width: 120px " >                        
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -65,13 +81,21 @@
                             <li class="nav-item pr-5">
                                 <a class="nav-link nav-contact" href="contact.html">Contact</a>
                             </li>
-                            <li class="nav-item dropdown "><a class="nav-link dropdown-toggle nav-contact" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">products</a>
+                            <li class="nav-item dropdown "><a class="nav-link dropdown-toggle nav-contact" style="margin-right: 2rem;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
                                 <div class="dropdown-menu txt-right" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item" href="index.html">Courses Community </a>
-                                  <a class="dropdown-item" href="../sales/index.html">Sales Link</a>
+                                    <a class="dropdown-item" href="website.html">Web Development</a>
+                                    <a class="dropdown-item" href="mobile.html">Mobile Development</a>
+                                    <a class="dropdown-item" href="desktop.html">Desktop Development</a>
                                 </div>
                             </li>
-                                                    
+                            <li class="nav-item dropdown "><a class="nav-link dropdown-toggle nav-contact" style="font-size: 22px; margin-top: -9px;"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">...</a>
+                                <div class="dropdown-menu txt-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="index.html">4SOFT Developers </a>
+                                    <a class="dropdown-item" href="../sales/index.html">Sales Link</a>
+                                    <a class="dropdown-item" href="Blogurs.html">Blogurs</a>
+                                </div>
+                            </li>  
+                            <li class="nav-item shadow-sm "><a class="nav-link nav-contact p-3" style="color: #FFF !important;" href="#">Get Start</a></li>                      
                         </ul>
                     </div>
                 </div>
@@ -478,7 +502,6 @@
         </div>
 
 
-
         <footer class="contact-footer">
             <div class="contact-footer__main">Subscribe to our newsletter.</div>
             <div class="contact-footer__sub mt-4">We'll send you occasional but very useful tips about building products and startup without a single line of code</div>
@@ -487,6 +510,41 @@
                     <input type="email" name="" id="" placeholder="What's your email?" class="contact-footer__input mr-3 mt-3">
                     <button class="contact-footer__button mt-3">subscribe</button>
                 </div>
+            </div>
+        </footer>
+        
+        <footer class="footer" id="footer" style="background-color:#192057 !important ; color: #FFF !important;">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer__title">Links</div>
+                        <ul class="unstyled-list">
+                            <li> <a href="index.html">Home</a></li>
+                            <li> <a href="#about">About</a></li>
+                            <li> <a href="#projects">Projects</a></li>
+                            <li> <a href="#vedios">Vedios</a> </li>
+                            <li> <a href="#questions">Questions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer__title">Contact us</div>
+                        <ul class="unstyled-list">
+                            <li><i class="fas fa-phone mr-3 text-primary"></i>  (+02) 01033293899 </li>
+                            <li><i class="fas fa-mail-bulk mr-3 text-primary"></i> 4soft@gmail.com </li>
+                            <li> <i class="fas fa-map-marker-alt mr-3 text-primary"></i>  Menia - dmaris - Abeag elry </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer__title">Location</div>
+                        <ul class="unstyled-list">
+                            <li> <i class="fas fa-map-marker-alt mr-3 text-primary"></i>  Elmenia - Dmaris - Abrag Elry </li>
+                        </ul>
+                        <div class="my-map" >
+                            <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3518.7693083050153!2d30.745185585088848!3d28.1230596826216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145b24ec50c036f1%3A0x844c3768372ce7c!2z2KfYqNix2KfYrCDYp9mE2LHZiQ!5e0!3m2!1sar!2seg!4v1592129772423!5m2!1sar!2seg" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </footer>
 

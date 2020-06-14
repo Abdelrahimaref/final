@@ -1,3 +1,5 @@
+
+
 /*global console, alert, swal, prompt, $*/
 $(document).ready(function() {
   // func scroll
@@ -153,3 +155,66 @@ window.onload = function () {
     }
   }  
 }
+
+
+/********* Contact Page ( Agile Modal ) **********/
+
+$('.box-agile-1').click(function(){
+  setTimeout(() => {
+    $('.box-agile-2').removeClass('card-color-active').addClass('card-color-not-active');
+  }, 100);
+  setTimeout(() => {
+    $('.box-agile-1').addClass('card-color-active').removeClass('card-color-not-active');
+  }, 100);
+})
+$('.box-agile-2').click(function(){
+  setTimeout(() => {
+    $('.box-agile-2').addClass('card-color-active').removeClass('card-color-not-active');
+  }, 100);
+  setTimeout(() => {
+    $('.box-agile-1').removeClass('card-color-active').addClass('card-color-not-active');
+  }, 100);
+})
+
+
+/********   1  - sub card  ******** */ 
+
+$('.sub-card').click(function(){
+  if($(this).hasClass('sub')) {
+    $(this).hide("slide", {direction: "right"}, 150);
+    $('.main-card').hide("slide", {direction: "left"}, 150);
+    $(this).show("slide", {direction: "right"}, 150);
+    $('.main-card').show("slide", {direction: "left"}, 150);
+  }
+  $(this).addClass('color-shadow').removeClass('sub').removeClass('border-main');
+  $('.main-card').addClass('border-main').addClass('sub2').removeClass('color-shadow');
+})
+$('.main-card').click(function(){
+  if($(this).hasClass('sub2')) {
+    $(this).hide("slide", {direction: "left"}, 150);
+    $('.sub-card').hide("slide", {direction: "right"}, 150);
+    $(this).show("slide", {direction: "left"}, 150);
+    $('.sub-card').show("slide", {direction: "right"}, 150);
+  }
+  $(this).addClass('color-shadow').removeClass('sub2').removeClass('border-main');  
+  $('.sub-card').addClass('border-main').addClass('sub').removeClass('color-shadow');
+})
+
+/***  Team Slider ***/
+$('.team-btn-1').click(function(){
+  setTimeout(() => {
+    $('.team-2').fadeOut(300);
+  }, 400);
+  setTimeout(() => {
+    $('.team-1').fadeIn(800);
+  }, 700);
+
+});
+$('.team-btn-2').click(function(){
+  setTimeout(() => {
+    $('.team-1').fadeOut(300);
+  }, 400);
+  setTimeout(() => {
+    $('.team-2').fadeIn(800);
+  }, 700);
+})

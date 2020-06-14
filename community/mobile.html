@@ -46,6 +46,12 @@
                 .slider__content-con {
                      padding-top: 1rem !important;
                 }
+                .box--image--mob--b {
+                    display: none !important ; 
+                }
+                .box--image--mob {
+                    display: none !important;
+                }
 
             }
 
@@ -154,6 +160,42 @@
 
         </div>
 
+                <!-- Why choose us -->
+
+                <div class="why-we" id="about">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center">
+                                <div class="card card-x p-4 text-center">
+                                    <img src="images/2advantages-01.svg" alt="">
+                                    <h1>Largest tutorial base</h1>
+                                    <p class="pl-3"> 
+                                        Learn to build anything you want and launch it in the soonest possible 
+                                        way Learn to build anything you want and launch it in the soonest possible way!  </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center">
+                                <div class="card card-x p-4 text-center">
+                                    <img src="images/2advantages2-02.svg" alt="">
+                                    <h1>Largest tutorial base</h1>
+                                    <p class="pl-3"> 
+                                        Learn to build anything you want and launch it in the soonest possible 
+                                        way Learn to build anything you want and launch it in the soonest possible way!  </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center">
+                                <div class="card card-x p-4 text-center">
+                                    <img src="images/3advantages-03.svg" alt="">
+                                    <h1>Largest tutorial base</h1>
+                                    <p class="pl-3"> 
+                                        Learn to build anything you want and launch it in the soonest possible 
+                                        way Learn to build anything you want and launch it in the soonest possible way!  </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
         <div class="destop">
             <div class="container">
@@ -170,11 +212,11 @@
                         <div class="col-lg-5 col-md-12 w-100 box--image--mob--b" style="background-image: url(images/iPhone_Shadow-05.svg); background-size: contain; background-repeat: no-repeat; display: none;">
                             <div class="ask-card3" style="padding: 9rem;padding-left: 10rem;">
                                 <ul class="list-unstyled card--li phone--dis" style="min-height: 150px;max-height: 400px; ;padding: 1rem; overflow: auto;" id="card--li"> 
-                                    <p class="text-center mb-3 box--p"> <span style="font-weight:bold" class="num--box">0</span> App Selected</p>
+                                    <p class="text-center mb-3 "> <span style="font-weight:bold" class="num--box">0</span> App Selected</p>
+                                    <div class="text-center box--p">
+                                        Total Price : <strong><span class="box--price">0</span> LE</strong>
+                                    </div>
                                     <div class="d-flex justify-content-end  mt-5 fixed" style="flex-direction: column;">
-                                        <div class="text-center">
-                                            Total Price : <strong><span class="box--price">0</span> LE</strong>
-                                        </div>
                                         <a href="#" class="form-control  btn btn-primary ">Continue</a>
                                     </div>
                                 </ul>
@@ -194,7 +236,7 @@
                                             <label for="sales-point">
                                                 <div class="d-flex justify-content-between">
                                                     <div>
-                                                        <p class="pt-3 pl-3">Point of sale</p>
+                                                        <p class="pt-3 pl-3">Point of sale <span style="color: rgb(188, 141, 204);">150 LE</span></p> 
                                                     </div>
                                                 </div>
                                             </label> 
@@ -210,7 +252,7 @@
                                             <label for="sales-point2">
                                                 <div class="d-flex justify-content-between">
                                                     <div>
-                                                        <p class="pt-3 pl-3">Bill</p>
+                                                        <p class="pt-3 pl-3">Bill <span style="color: rgb(188, 141, 204);">350 LE</span></p>
                                                     </div>
                                                 </div>
                                             </label> 
@@ -226,7 +268,7 @@
                                             <label for="sales-point3">
                                                 <div class="d-flex justify-content-between">
                                                     <div>
-                                                        <p class="pt-3 pl-3">Sales</p>
+                                                        <p class="pt-3 pl-3">Sales <span style="color: rgb(188, 141, 204);">750 LE</span></p>
                                                     </div>
                                                 </div>
                                             </label> 
@@ -241,7 +283,7 @@
                                             <label for="sales-point4">
                                                 <div class="d-flex justify-content-between">
                                                     <div>
-                                                        <p class="pt-3 pl-3">Rental</p>
+                                                        <p class="pt-3 pl-3">Rental <span style="color: rgb(188, 141, 204);">280 LE</span></p>
                                                     </div>
                                                 </div>
                                             </label> 
@@ -257,7 +299,7 @@
                                             <label for="sales-point5">
                                                 <div class="d-flex justify-content-between">
                                                     <div>
-                                                        <p class="pt-3 pl-3">Subscriptions</p>
+                                                        <p class="pt-3 pl-3">Subscriptions <span style="color: rgb(188, 141, 204);">50 LE</span></p>
                                                     </div>
                                                 </div>
                                             </label> 
@@ -265,14 +307,14 @@
                                     </div>
     
                                     <div class="col-md-12 mt-3">
-                                        <div class=" d-flex justify-content-start" value="50">
+                                        <div class=" d-flex justify-content-start" value="250">
                                             <div class="form-group pt-4">
                                                 <input type="checkbox" name="" value="Field_Service" id="sales-point6" class="radio-dsktop">
                                             </div>
                                             <label for="sales-point6">
                                                 <div class="d-flex justify-content-between">
                                                     <div>
-                                                        <p class="pt-3 pl-3">Field Service</p>
+                                                        <p class="pt-3 pl-3">Field Service <span style="color: rgb(188, 141, 204);">250 LE</span></p>
                                                     </div>
                                                 </div>
                                             </label> 
@@ -280,14 +322,14 @@
                                     </div>
     
                                     <div class="col-md-12 mt-3">
-                                        <div class=" d-flex justify-content-start" value="50">
+                                        <div class=" d-flex justify-content-start" value="70">
                                             <div class="form-group pt-4">
                                                 <input type="checkbox" name="" value="Sign" id="sales-point7" class="radio-dsktop">
                                             </div>
                                             <label for="sales-point7">
                                                 <div class="d-flex justify-content-between">
                                                     <div>
-                                                        <p class="pt-3 pl-3">Sign</p>
+                                                        <p class="pt-3 pl-3">Sign <span style="color: rgb(188, 141, 204);">70 LE</span></p>
                                                     </div>
                                                 </div>
                                             </label> 
@@ -302,7 +344,7 @@
                                             <label for="sales-point8">
                                                 <div class="d-flex justify-content-between">
                                                     <div>
-                                                        <p class="pt-3 pl-3">CRM </p>
+                                                        <p class="pt-3 pl-3">CRM <span style="color: rgb(188, 141, 204);">50 LE</span></p>
                                                     </div>
                                                 </div>
                                             </label> 
@@ -317,7 +359,7 @@
                                             <label for="web2">
                                                 <div class="d-flex justify-content-between">
                                                     <div>
-                                                        <p class="pt-3 pl-3">Ecommerce</p>
+                                                        <p class="pt-3 pl-3">Ecommerce <span style="color: rgb(188, 141, 204);">50 LE</span></p>
                                                     </div>
                                                 </div>
                                             </label> 
@@ -325,14 +367,14 @@
                                     </div>
     
                                     <div class="col-md-12 mt-3">
-                                        <div class=" d-flex justify-content-start" value="50">
+                                        <div class=" d-flex justify-content-start" value="150">
                                             <div class="form-group pt-4">
                                                 <input type="checkbox" name="" value="Forum" id="web3" class="radio-dsktop">
                                             </div>
                                             <label for="web3">
                                                 <div class="d-flex justify-content-between">
                                                     <div>
-                                                        <p class="pt-3 pl-3">Forum</p>
+                                                        <p class="pt-3 pl-3">Forum <span style="color: rgb(188, 141, 204);">150 LE</span></p>
                                                     </div>
                                                 </div>
                                             </label> 
@@ -340,14 +382,14 @@
                                     </div>
                                     
                                     <div class="col-md-12 mt-3">
-                                        <div class=" d-flex justify-content-start" value="50">
+                                        <div class=" d-flex justify-content-start" value="150">
                                             <div class="form-group pt-4">
                                                 <input type="checkbox" name="" value="Elearning" id="web5" class="radio-dsktop">
                                             </div>
                                             <label for="web5">
                                                 <div class="d-flex justify-content-between">
                                                     <div>
-                                                        <p class="pt-3 pl-3">Elearning</p>
+                                                        <p class="pt-3 pl-3">Elearning <span style="color: rgb(188, 141, 204);">150 LE</span></p>
                                                     </div>
                                                 </div>
                                             </label> 
@@ -355,14 +397,14 @@
                                     </div> 
 
                                     <div class="col-md-12 mt-3">
-                                        <div class=" d-flex justify-content-start" value="50">
+                                        <div class=" d-flex justify-content-start" value="1050">
                                             <div class="form-group pt-4">
                                                 <input type="checkbox" name="" value="Life_Chat" id="web6" class="radio-dsktop">
                                             </div>
                                             <label for="web6">
                                                 <div class="d-flex justify-content-between">
                                                     <div>
-                                                        <p class="pt-3 pl-3">Life Chat</p>
+                                                        <p class="pt-3 pl-3">Life Chat <span style="color: rgb(188, 141, 204);">1050 LE</span></p>
                                                     </div>
                                                 </div>
                                             </label> 
@@ -375,7 +417,7 @@
                             <div class="ask-card3 p-2 w-100 fixed-bottom phone--apear" style="display: none;">
                                 <ul class="list-unstyled card--li shadow bg-white" style="min-height: 100px;max-height: 300px; ;padding: 1rem; overflow: auto;" id="card--li"> 
                                     <p class="text-center mb-3"> <span style="font-weight:bold" class="num--box">0</span> App Selected</p>
-                                    <div class="d-flex justify-content-end box--p mt-5 fixed-bottom mt-3" style="flex-direction: column;">
+                                    <div class="d-flex justify-content-end box--p3 mt-5 fixed-bottom mt-3" style="flex-direction: column;">
                                         <div class="text-center mt-3 ">
                                             Total Price : <strong><span class="box--price">0</span> LE</strong>
                                         </div>
@@ -391,7 +433,6 @@
 
 
 
-
         <footer class="contact-footer">
             <div class="contact-footer__main">Subscribe to our newsletter.</div>
             <div class="contact-footer__sub mt-4">We'll send you occasional but very useful tips about building products and startup without a single line of code</div>
@@ -402,6 +443,42 @@
                 </div>
             </div>
         </footer>
+        
+        <footer class="footer" id="footer" style="background-color:#192057 !important ; color: #FFF !important;">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer__title">Links</div>
+                        <ul class="unstyled-list">
+                            <li> <a href="index.html">Home</a></li>
+                            <li> <a href="#about">About</a></li>
+                            <li> <a href="#projects">Projects</a></li>
+                            <li> <a href="#vedios">Vedios</a> </li>
+                            <li> <a href="#questions">Questions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer__title">Contact us</div>
+                        <ul class="unstyled-list">
+                            <li><i class="fas fa-phone mr-3 text-primary"></i>  (+02) 01033293899 </li>
+                            <li><i class="fas fa-mail-bulk mr-3 text-primary"></i> 4soft@gmail.com </li>
+                            <li> <i class="fas fa-map-marker-alt mr-3 text-primary"></i>  Menia - dmaris - Abeag elry </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer__title">Location</div>
+                        <ul class="unstyled-list">
+                            <li> <i class="fas fa-map-marker-alt mr-3 text-primary"></i>  Elmenia - Dmaris - Abrag Elry </li>
+                        </ul>
+                        <div class="my-map" >
+                            <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3518.7693083050153!2d30.745185585088848!3d28.1230596826216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145b24ec50c036f1%3A0x844c3768372ce7c!2z2KfYqNix2KfYrCDYp9mE2LHZiQ!5e0!3m2!1sar!2seg!4v1592129772423!5m2!1sar!2seg" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+
 
 
         <script src="js/particles.js"></script>

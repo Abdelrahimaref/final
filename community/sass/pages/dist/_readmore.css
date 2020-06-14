@@ -1,0 +1,62 @@
+.padding-title-responsive {
+  padding-top: 10rem;
+}
+
+.readmore-card {
+  height: 409.5px;
+  background-color: #f9fbfc;
+  border-radius: 8px;
+  transition: box-shadow 100ms ease-in 0s;
+  padding: 8rem;
+  margin-top: 14rem;
+}
+
+.readmore-link {
+  white-space: pre-wrap;
+  text-decoration: none;
+  word-break: break-word;
+  user-select: none;
+  cursor: pointer;
+  pointer-events: auto;
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #00527f;
+  line-height: 1.5;
+  border-radius: 0px;
+}
+
+.readmore-name {
+  overflow: visible;
+  padding-bottom: 0px;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  line-height: 1;
+  padding-top: 0.5px;
+  border-radius: 0px;
+}
+
+.readmore-job {
+  overflow: visible;
+  padding-bottom: 0px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #00527f;
+  text-align: center;
+  line-height: 1.42;
+  padding-top: 3.5px;
+  border-radius: 0px;
+}
+
+.readmore-content {
+  overflow: visible;
+  padding-bottom: 0px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #555555;
+  text-align: center;
+  line-height: 1.6;
+  border-radius: 0px;
+}

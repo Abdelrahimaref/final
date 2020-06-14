@@ -265,6 +265,28 @@ h4 {
   color: #40aacf !important;
 }
 
+.main-tilte {
+  overflow: visible;
+  padding-bottom: 0px;
+  font-family: "Open Sans";
+  font-size: 34px;
+  font-weight: 700;
+  color: black;
+  line-height: 1.5;
+  border-radius: 0px;
+  word-break: break-word;
+}
+
+.sub-title-p {
+  overflow: visible;
+  padding-bottom: 0px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.75);
+  line-height: 1.5;
+  border-radius: 0px;
+}
+
 .heading-primary {
   color: #FFF;
   text-transform: uppercase;
@@ -405,6 +427,14 @@ h4 {
   .contact-content__title, .contact-footer__main {
     font-size: 20px !important;
   }
+
+  .readmore-card {
+    height: auto !important;
+  }
+
+  .padding-title-responsive {
+    padding-top: 1rem !important;
+  }
 }
 @media (max-width: 992px) {
   .left {
@@ -442,6 +472,10 @@ h4 {
   }
 
   .slider__content-con {
+    text-align: center;
+  }
+
+  .padding-title-responsive {
     text-align: center;
   }
 
@@ -1229,6 +1263,38 @@ button, html [type=button], [type=reset], [type=submit] {
   border-radius: 0px;
 }
 
+.c-form__control {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 9px 10px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #888e99;
+  background-color: #f7f9fc;
+  background-image: none;
+  border: 1px solid #8e9198;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.comment-btn {
+  height: auto;
+  padding: 10px 26px;
+  vertical-align: middle;
+  border: none;
+  background-color: #191919;
+  color: #FFF !important;
+  font-size: 12px;
+  line-height: 24px;
+  min-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .nav-link {
   cursor: pointer;
   pointer-events: auto;
@@ -1557,6 +1623,14 @@ button, html [type=button], [type=reset], [type=submit] {
 }
 .contact-footer ::placeholder {
   color: #FFF;
+}
+
+.footer__title {
+  color: #FFF;
+}
+
+#footer a, #footer li {
+  color: #999 !important;
 }
 
 .nav-contact {
@@ -2111,6 +2185,69 @@ button, html [type=button], [type=reset], [type=submit] {
 
 .destop {
   margin-top: 10rem;
+}
+
+.padding-title-responsive {
+  padding-top: 10rem;
+}
+
+.readmore-card {
+  height: 409.5px;
+  background-color: #f9fbfc;
+  border-radius: 8px;
+  transition: box-shadow 100ms ease-in 0s;
+  padding: 8rem;
+  margin-top: 14rem;
+}
+
+.readmore-link {
+  white-space: pre-wrap;
+  text-decoration: none;
+  word-break: break-word;
+  user-select: none;
+  cursor: pointer;
+  pointer-events: auto;
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #00527f;
+  line-height: 1.5;
+  border-radius: 0px;
+}
+
+.readmore-name {
+  overflow: visible;
+  padding-bottom: 0px;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  line-height: 1;
+  padding-top: 0.5px;
+  border-radius: 0px;
+}
+
+.readmore-job {
+  overflow: visible;
+  padding-bottom: 0px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #00527f;
+  text-align: center;
+  line-height: 1.42;
+  padding-top: 3.5px;
+  border-radius: 0px;
+}
+
+.readmore-content {
+  overflow: visible;
+  padding-bottom: 0px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #555555;
+  text-align: center;
+  line-height: 1.6;
+  border-radius: 0px;
 }
 
 /*# sourceMappingURL=main.css.map */

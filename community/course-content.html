@@ -21,19 +21,33 @@
        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>        
        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">        
-       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	   <!--Internet Explorer-->
 	    <script src="js/html5shiv.min.js"></script>
         <script src="js/respond.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 
+        <style>
+        .dropdown-toggle::after {
+            display: none;
+        }
+        .nav-item:last-of-type {
+            padding: 0 20px;
+            margin-left: 5px;
+            background: -webkit-linear-gradient(left, #9473dd 0%, #1ac9e4 100%);
+            border-radius: 20px;
+            -o-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+        }
+        </style>
        <!---->
 	</head>
 	<body>
-
         <!--- Header Section-->
         <div class="Nav wow fadeInUp">
-            <nav class="navbar navbar-expand-lg navbar-light nav-scroll  fixed-top  py-4 border-bottom mb-5 pl-5 pr-5">
+            <nav class="navbar navbar-expand-lg navbar-light nav-scroll  fixed-top  py-4  mb-5 pl-5 pr-5">
                 <div class="container">
                     <img src="images/final logo-06.png" style=" width: 120px " >                        
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,29 +55,39 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto"></ul>
+                        <ul class="navbar-nav mr-auto"></ul>
                         <ul class="navbar-nav">                            
-                            <li class="nav-item  active pr-5">
-                                <a class="nav-link" href="../first-page/index_pages/index.html">Home</a>
+                            <li class="nav-item pr-5">
+                                <!--- Nav Contact style in contact.scss --->
+                                <a class="nav-link nav-contact" href="../first-page/index_pages/index.html">Home</a>
                             </li>
                             <li class="nav-item pr-5">
-                                <a class="nav-link" href="#info">Courses info</a>
+                                <a class="nav-link nav-contact" href="allCourses.html">Courses</a>
                             </li>
                             <li class="nav-item pr-5">
-                                <a class="nav-link" href="#content">Courses Content</a>
+                                <a class="nav-link nav-contact" href="#content">Course Content</a>
+                            </li>
+                            <li class="nav-item  pr-5">
+                                <a class="nav-link nav-contact" href="#questions">FAQS</a>
                             </li>
                             <li class="nav-item pr-5">
-                                <a class="nav-link" href="#questions">Questions</a>
+                                <a class="nav-link nav-contact" href="#footer">Contact</a>
                             </li>
-                            <li class="nav-item pr-5">
-                                <a class="nav-link" href="#footer">Contact Us</a>
-                            </li>
-                            <li class="nav-item dropdown "><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">products</a>
+                            <li class="nav-item dropdown "><a class="nav-link dropdown-toggle nav-contact" style="margin-right: 2rem;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
                                 <div class="dropdown-menu txt-right" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item" href="index.html">Courses Community </a>
-                                  <a class="dropdown-item" href="../sales/index.html">Sales Link</a>
+                                    <a class="dropdown-item" href="website.html">Web Development</a>
+                                    <a class="dropdown-item" href="mobile.html">Mobile Development</a>
+                                    <a class="dropdown-item" href="desktop.html">Desktop Development</a>
                                 </div>
                             </li>
-                                                    
+                            <li class="nav-item dropdown "><a class="nav-link dropdown-toggle nav-contact" style="font-size: 22px; margin-top: -9px;"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">...</a>
+                                <div class="dropdown-menu txt-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="index.html">4SOFT Developers </a>
+                                    <a class="dropdown-item" href="../sales/index.html">Sales Link</a>
+                                    <a class="dropdown-item" href="Blogurs.html">Blogurs</a>
+                                </div>
+                            </li>  
+                            <li class="nav-item shadow-sm "><a class="nav-link nav-contact p-3" style="color: #FFF !important;" href="#">Get Start</a></li>                      
                         </ul>
                     </div>
                 </div>

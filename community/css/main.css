@@ -1626,7 +1626,7 @@ button, html [type=button], [type=reset], [type=submit] {
 }
 
 .footer__title {
-  color: #FFF;
+  color: #FFF !important;
 }
 
 #footer a, #footer li {

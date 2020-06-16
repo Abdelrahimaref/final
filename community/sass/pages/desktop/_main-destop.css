@@ -1,3 +1,37 @@
 .destop {
   margin-top: 10rem;
 }
+
+/**** For Mobile ****/
+.mob-icons i {
+  height: 17px;
+  width: 17px;
+  left: 0px;
+  top: 2px;
+  padding: 0px;
+  text-align: center;
+  cursor: inherit;
+  background: none;
+  border: none;
+  color: rgba(64, 170, 207, 0.5);
+  font-size: 17px;
+  border-radius: 4px;
+}
+
+.category-content {
+  overflow: visible;
+  padding-bottom: 0px;
+  font-family: Roboto;
+  font-size: 14px;
+  color: #44445f;
+  line-height: 1.4;
+  border-radius: 0px;
+}
+
+.cat {
+  transition: all .3s;
+}
+
+.cat:hover {
+  background: none rgba(218, 238, 239, 0.7) !important;
+}

@@ -58,6 +58,12 @@
                 -moz-border-radius: 20px;
                 -webkit-border-radius: 20px;
             }
+            .footer__title {
+                color: #FFF;
+            }
+            #footer a , #footer li {
+                color: #999 !important;
+            }
        </style>
 	</head>
 	<body>
@@ -80,13 +86,10 @@
                                     <a class="nav-link nav-contact" href="../first-page/index_pages/index.html">Home</a>
                                 </li>
                                 <li class="nav-item pr-5">
-                                    <a class="nav-link nav-contact" href="#about">About Us</a>
+                                    <a class="nav-link nav-contact" href="#payment">Payment</a>
                                 </li>
                                 <li class="nav-item pr-5">
-                                    <a class="nav-link nav-contact" href="#projects">Projects</a>
-                                </li>
-                                <li class="nav-item pr-5">
-                                    <a class="nav-link nav-contact" href="#vedios">Vedios</a>
+                                    <a class="nav-link nav-contact" href="#related">Related Projects</a>
                                 </li>
                                 <li class="nav-item  pr-5">
                                     <a class="nav-link nav-contact" href="#questions">FAQS</a>
@@ -94,13 +97,6 @@
                                 <li class="nav-item pr-5">
                                     <a class="nav-link nav-contact" href="#footer">Contact</a>
                                 </li>
-                                <li class="nav-item dropdown "><a class="nav-link dropdown-toggle nav-contact" style="font-size: 22px; margin-top: -9px;"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">...</a>
-                                    <div class="dropdown-menu txt-right" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="index.html">4SOFT Developers </a>
-                                        <a class="dropdown-item" href="../sales/index.html">Sales Link</a>
-                                        <a class="dropdown-item" href="Blogurs.html">Blogurs</a>
-                                    </div>
-                                </li>  
                                 <li class="nav-item shadow-sm "><a class="nav-link nav-contact p-3" style="color: #FFF !important;" href="#">Get Start</a></li>                      
                             </ul>
                         </div>
@@ -194,36 +190,6 @@
                 </div>
             </div>
 
-            <!---- Social Icon ---->
-            <!-- <div class="main-slider__social">
-                <ul class="ul">
-                    <li class=" li twitter">
-                        <a href="#">
-                            Twitter
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class=" li facebook">
-                        <a href="#">
-                            Facebook
-                            <i class="fab fa-facebook" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li class=" li google">
-                        <a href="#">
-                            Google-Plus
-                            <i class="fab fa-google-plus" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li class="li insta">
-                        <a href="#">
-                            Instagram
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div> -->
-
         </div>
 
 
@@ -233,19 +199,17 @@
             <div class="title">
                 <h1>Related Projects</h1>
             </div>
-           
             <div class="search-section">
                 <div class="container">
                     <!--- Course Box Section -- Style in courses.scss file in components Folder --->
                     <div class="course-box">
                         <div class="row">
-
                             <div class="col-lg-4 col-md-6 course blogBox2">
                                 <a href="course-payment.html">
                                     <div class="w-100">
                                         <img src="images/course1.png" class="w-100"  alt="">
                                         <div class="card w-100 pb-4">
-                                            
+                
                                             <div class="course__title">
                                                 <div class="d-flex justify-content-between mt-2 p-2">
                                                     <h1 class="mt-3"> Triviaro </h1>
@@ -455,8 +419,8 @@
                             </div>
 
                             <div class="text-center w-100">
-                                <a  class="btn btn-lg mt-5 pt-4 get-link text-white " id="loadMore2" style="width: 240px; height: 48px;cursor: pointer;"> 
-                                    Load More
+                                <a href="allCourses.html"  class="btn btn-lg mt-5 pt-4 get-link text-white " style="width: 240px; height: 48px;cursor: pointer;"> 
+                                    All Projects
                                  </a>
                             </div>
 
@@ -708,6 +672,40 @@
                     <input type="email" name="" id="" placeholder="What's your email?" class="contact-footer__input mr-3 mt-3">
                     <button class="contact-footer__button mt-3">subscribe</button>
                 </div>
+            </div>
+        </footer>
+        <footer class="footer" id="footer" style="background-color:#192057 !important ; color: #FFF !important;">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer__title">Links</div>
+                        <ul class="unstyled-list">
+                            <li> <a href="index.html">Home</a></li>
+                            <li> <a href="#about">About</a></li>
+                            <li> <a href="#projects">Projects</a></li>
+                            <li> <a href="#vedios">Vedios</a> </li>
+                            <li> <a href="#questions">Questions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer__title">Contact us</div>
+                        <ul class="unstyled-list">
+                            <li><i class="fas fa-phone mr-3 text-primary"></i>  (+02) 01033293899 </li>
+                            <li><i class="fas fa-mail-bulk mr-3 text-primary"></i> 4soft@gmail.com </li>
+                            <li> <i class="fas fa-map-marker-alt mr-3 text-primary"></i>  Menia - dmaris - Abeag elry </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer__title">Location</div>
+                        <ul class="unstyled-list">
+                            <li> <i class="fas fa-map-marker-alt mr-3 text-primary"></i>  Elmenia - Dmaris - Abrag Elry </li>
+                        </ul>
+                        <div class="my-map" >
+                            <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3518.7693083050153!2d30.745185585088848!3d28.1230596826216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145b24ec50c036f1%3A0x844c3768372ce7c!2z2KfYqNix2KfYrCDYp9mE2LHZiQ!5e0!3m2!1sar!2seg!4v1592129772423!5m2!1sar!2seg" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </footer>
 

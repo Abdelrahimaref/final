@@ -17,7 +17,23 @@ $('.box-agile-2').click(function () {
     $('.box-agile-1').removeClass('card-color-active').addClass('card-color-not-active');
   }, 100);
 });
-/********** Desktop page  ********/
+/*** Mobile Page  ****/
+
+var yo = 1;
+$('.cat').click(function () {
+  if (yo == 1) {
+    $(this).parent().children('.category-content').css({
+      display: 'block'
+    });
+    yo = 2;
+  } else if (yo == 2) {
+    $(this).parent().children('.category-content').css({
+      display: 'none'
+    });
+    yo = 1;
+  }
+});
+/********** Desktop page and mibile and web  ********/
 
 var iNum = 0;
 var xPrice = 0;

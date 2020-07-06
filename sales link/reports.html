@@ -1,0 +1,297 @@
+<html>
+   <head>
+	   <!--TO Support Many Language Include Arabic Language-->
+        <meta charset="utf-8"/>
+	   
+	   <!--For Internet Explorer-->
+	    <meta http-equiv="X-UA-	Compatible"content="IE=edge">
+	   
+	   <!--First mobilw meta-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	   
+        <meta name="description"content="mt company">
+        <title>4SOFT</title>
+        <link rel="shortcut icon" href="images/final logo-06.png">
+        <!--call bootstrap-->
+	    <link rel="stylesheet"href="css/bootstrap.css"/>
+        <!--Page Style-->	   
+        <link rel="stylesheet"href="css/main.css"/>
+       <!--Animate.css-->
+       <link rel="stylesheet"href="css/animate.min.css"/>
+       <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>        
+       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">       
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+       <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	   <!--Internet Explorer-->
+	    <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+       <!---->
+       
+       <style>
+           @media(max-width: 992px) {
+                li {
+                    font-size: 15px;
+                }
+            }
+            td , th {
+                padding: 15px !important;
+            }
+            .dropdown2 {
+                list-style: none;
+                position: relative;
+                margin-top: 6px;
+            }
+            @media (max-width: 992px) {
+                .list-left {
+                    width: 25% !important;
+                }
+                .right {
+                    width: 74%;
+                }
+                .left {
+                    width: 30% !important;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .left {
+                    width: 14% !important;
+                }
+            }
+
+
+
+       </style>
+	</head>
+	<body>
+   
+
+ <!----------- Start NavBar Section ----------->
+    <nav class="bg-purple pb-0 fixed-top">
+        <div class="container-fluid">
+            <div class="our-nav d-flex" style="flex-wrap: wrap;justify-content: space-between;">
+
+                <div class="left-nav">
+                    <ul class="d-flex justify-content-end unstyled-list pt-4 pr-5">
+                        <li class="pt-1 mr-3 slide-in">
+                            <span class="icon-bullet">
+                                <i class="fas fa-sliders-h text-white fa-lg"></i>
+                            </span>
+                        </li>
+                        <li class="pt-1 mr-3 slide-out hidden">
+                            <span class="icon-bullet">
+                                <i class="fas fa-sliders-h text-white fa-lg"></i>
+                            </span>
+                        </li>
+                        <li class="">
+                            <a href="">
+                            <img src="images/logo-white.png" class="image-width" alt="Logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-nav">
+                    
+                    <ul class="d-flex justify-content-end unstyled-list">
+
+                        <li class="mt-4 pt-2 mr-3 pb-0 pr-3 border-right">
+                            <a class="text-white" href="#">Home</a>
+                        </li>
+                        <li class="mt-4 pt-2 mr-3 pb-0 pr-3 ">
+                            <a class="text-white" href="#">About</a>
+                        </li>
+
+                        <li class="pt-2 pr-5 dropdown2">
+                            <a style="cursor: pointer;">
+                                <img src="images/cmt2.jpg" alt="User" class="navbar-nav__img rounded-circle" >
+                                <span class="cursor-pointer text-white pl-3 lead pt-5 ">abdo@gmail.com</span>
+                            </a>
+
+                            <!---- Style in dropdown.scss(for dropdown styles) and notifiaction-num.scss(for number appear top of icon) ----->
+                            <ul class="dropdown-menu2 unstyled-list" style="display: none;">
+                                <li style="width: 11rem; cursor: pointer;">
+                                    <div class="d-flex justify-content-between">
+                                        <p>Log Out</p>
+                                        <span><i class="fas fa-sign-out-alt"></i></span>
+                                    </div>
+                                </li>                                                        
+                            </ul>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!---------End Navbar Section ------->
+
+    <!-------- Start Body Section ------->
+    <main class="mt-5 d-flex justify-content-between">
+    <!------------ Left Srction ------------->
+        <!----------- Fixed Column Nav ---------->
+        <div class="left" style="width: 15%;" >
+            <!-- Sidebar (Fixed Column Navbar)-->
+            <div class="bg-white  mt-1"style="width:100% ; height:100vh ; " >
+                <ul class="pt-5 shadow unstyled-list bg-white list-left" style="position:fixed; width: 15% ; height: 100vh;" >
+                    <h1 class="text-center mt-5 pt-5">Sales Link</h1>
+                    <li class="pt-5"><a href="dashboard.html"> <i class="fas fa-home f-20 ml-3 mr-3"></i> Dashboard </a> </li>
+                    <li class="pt-5"><a href="offers.html"> <i class="fas fa-cubes f-20 ml-3 mr-3"></i> All Offers </a> </li>
+                    <li class="pt-5 active"><a href="reports.html"><i class="fas fa-comments ml-3 mr-3 fa-lg"></i> Reports</a></li>
+                    <li class="pt-5"><a href="coupons.html"><i class="fas fa-cogs f-20 ml-3 mr-3"></i> Coupons</a></li>
+                    <li class="pt-5"><a href="#"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>  FAQ</a></li>
+                    <li class="pt-5"><a href="#"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>  Payment</a></li>
+
+                    <div class="mt-5 ml-5 pt-5">
+                        <p><a href="#">Terms of services</a></p>
+                        <p><a href="#">Privacy policy</a></p>
+                        <p><a href="#">Contact support</a></p>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="right pt-0" style="width: 85%;">
+            <div class="row">
+                <div class="col-md-12 " style="margin-top:31px">
+                    <nav class="pt-1" style="background-color: #ddd;">
+                        <ul class="unstyled-list w-100">
+                            <div class="row W-100">
+                                <div class="col-xl-4 col-lg-12">
+                                    <li class="border-right border-dark pl-5 pr-5 mt-3">
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <select id="inputState" class="form-control shadow-none" style="background-color: transparent;">
+                                                    <option selected>Jun 19,2020</option>
+                                                    <option> Select </option>
+                                                    <option> date </option>
+                                                </select> 
+                                            </div>
+                                            <div class="col-1 mt-2">
+                                                :
+                                            </div>
+                                            <div class="col-6">
+                                                <select id="inputState" class="form-control shadow-none" style="background-color: transparent;">
+                                                    <option selected>Jun 19,2020</option>
+                                                    <option> Select </option>
+                                                    <option> date </option>
+                                                </select> 
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="col-xl-4 col-lg-12">
+                                    <li class="border-right border-dark pl-5 pr-5" style=" margin-top: 9px;">
+                                        <div class="form-group">
+                                            <select id="inputState" class="form-control  shadow-none" style="background-color: transparent;">
+                                                <option selected>Report Option</option>
+                                                <option> Select </option>
+                                                <option> date </option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="col-xl-4 col-lg-12">
+                                    <li class="border-right border-dark pl-3 pr-5" style=" margin-top: 9px;">
+                                        <div class="form-group">
+                                            <select id="inputState" class="form-control  shadow-none border border-dark" style="background-color: transparent;">
+                                                <option selected>Graph Data:</option>
+                                                <option>Ordered by time</option>
+                                                <option>Ordered by date</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-md-12 d-flex justify-content-center" style="margin-top: 50px;" >
+                    <table class="table table-striped table-bordered bg-white " style=" width: 90%;">
+                        <thead class="text-center">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Details</th>
+                                <th scope="col">Details</th>
+                                <th scope="col">Details</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>UI</td>
+                                <td>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Debitis maiores libero voluptate ipsam illo a tempore sequi error at pariatur, beatae, eligendi, nisi architecto quae vel recusandae? Voluptatibus, veritatis ratione!
+                                </td>
+                                <td>
+                                        Lorem ipsum dolor sit amet consectetur ratione!
+                                </td>
+                                <td>
+                                        Lorem ipsum dolor sit amet consectetur ratione!
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>UI</td>
+                                <td>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Debitis maiores libero voluptate ipsam illo a tempore sequi error at pariatur, beatae, eligendi, nisi architecto quae vel recusandae? Voluptatibus, veritatis ratione!
+                                </td>
+                                <td>
+                                        Lorem ipsum dolor sit amet consectetur ratione!
+                                </td>
+                                <td>
+                                        Lorem ipsum dolor sit amet consectetur ratione!
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>UI</td>
+                                <td>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Debitis maiores libero voluptate ipsam illo a tempore sequi error at pariatur, beatae, eligendi, nisi architecto quae vel recusandae? Voluptatibus, veritatis ratione!
+                                </td>
+                                <td>
+                                        Lorem ipsum dolor sit amet consectetur ratione!
+                                </td>
+                                <td>
+                                        Lorem ipsum dolor sit amet consectetur ratione!
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+		<script src="../js/wow.min.js"></script>
+        <script>
+          new WOW().init();
+        </script>
+        <script src="js/jQuery3.3.1.min.js"></script>
+        <!---Slider Laibiray-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/sliderComponents.js"></script>
+        <script src="js/e.js"></script>
+	</body>
+    
+
+
+</html>

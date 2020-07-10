@@ -1,0 +1,275 @@
+<html>
+   <head>
+	   <!--TO Support Many Language Include Arabic Language-->
+        <meta charset="utf-8"/>
+	   
+	   <!--For Internet Explorer-->
+	    <meta http-equiv="X-UA-	Compatible"content="IE=edge">
+	   
+	   <!--First mobilw meta-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	   
+        <meta name="description"content="mt company">
+        <title>4SOFT</title>
+        <link rel="shortcut icon" href="images/final logo-06.png">
+        <!--call bootstrap-->
+	    <link rel="stylesheet"href="css/bootstrap.css"/>
+        <!--Page Style-->	   
+        <link rel="stylesheet"href="css/main.css"/>
+       <!--Animate.css-->
+       <link rel="stylesheet"href="css/animate.min.css"/>
+       <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>        
+       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">       
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+       <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	   <!--Internet Explorer-->
+	    <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+	</head>
+	<body>
+   
+
+ <!----------- Start NavBar Section ----------->
+    <nav class="bg-white shadow pb-0 fixed-top mb-4">
+        <div class="container-fluid">
+            <div class="our-nav p-3 d-flex" style="flex-wrap: wrap;justify-content: space-between;">
+                <img src="images/final logo-06.png" class="image-width" alt="Logo">
+                <a href="#"class="border text-muted language-btn p-2 pl-3 pr-3">AR</a>
+            </div>
+        </div>
+    </nav>
+
+    <!---------End Navbar Section ------->
+
+    <!------- Category Section ------>
+    <section class="container">
+        <div class="title category d-flex justify-content-center w-100">
+            <div class="category-content d-flex justify-content-between nav-icon-color" style="width: 60%;font-size: 20px;">
+                <a href="requests.html" class="text-white nav-icon-bg-color"style="border-radius: 15px;">
+                    <div class="text-center p-2 pl-5 pr-5 nav-box">
+                        <img src="images/white-1.svg" class="img-icon-size" alt="">
+                        <p>Request</p> 
+                    </div>
+                </a>
+
+                <a href="cloud.html" class="nav-icon-color"style="border-radius: 15px;">
+                    <div class="text-center p-2 nav-box" >
+                        <img src="images/light-1.svg" class="img-icon-size" alt="">
+                        <p>Cloud</p> 
+                    </div>
+                </a>
+
+                <a href="products.html" class="nav-icon-color"style="border-radius: 15px;">
+                    <div class="text-center p-2 nav-box">
+                        <img src="images/light-1.svg" class="img-icon-size" alt="">
+                        <p>All Products</p> 
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="line-section d-flex justify-content-center">
+        <div class="container">
+            <div class="line-content d-flex justify-content-between pt-3" style="width: 80%;">
+                <div class="text-center" style="width: 50%;">
+                    <p class="text-center text-white pointer send title-responsive" style="font-size: 20px;">SEND BOX</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-center nav-icon-color pointer ticket title-responsive" style="font-size: 20px;">TICKET TEMPLATE</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!----- Request Form ----->
+
+    <div class="container">
+        <div class="mb-5 pb-5 mt-5">
+            <!-------- Ticket Template Section ------->
+            <div class="request-form" style="font-size: 20px;">
+                <div class="card p-4 pl-5 pr-5">
+                    <p class="mb-5 pb-5">Ticket / Email Form</p>
+                    <div class="form-group">
+                        <div class="row mb-5">
+                            <div class="col-md-2">
+                                <label for="subject" style="font-size: 16px;">Subject</label>
+                            </div>
+                            <div class="col-md-10">
+                                <input  name="subject" type="text" placeholder="Subject" id="subject" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row mb-5">
+                            <div class="col-md-2">
+                                <label for="type" style="font-size: 16px;">Type</label>
+                            </div>
+                            <div class="col-md-10">
+                                <select name="type" id="type" class="form-control" style="font-size: 13px;">
+                                    <option value="">select</option>
+                                    <option value="">select</option>
+                                    <option value="">select</option>
+                                    <option value="">select</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2 mb-5">
+                                <label for="ticket" style="font-size: 16px;">Ticket Priority</label>
+                            </div>
+                            <div class="col-md-6 mb-5">
+                                <select name="ticket-priority" id="ticket" class="form-control" style="font-size: 13px;">
+                                    <option value="">select</option>
+                                    <option value="">select</option>
+                                    <option value="">select</option>
+                                    <option value="">select</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 ml-auto">
+                                <div class="d-flex justify-content-end">
+                                    <input type="file" name="" id="real-life" hidden="hidden"/>
+                                    <button id="choose-btn-pc" class="border-0 p-3 pl-5 pr-5 bg-white shadow" style="font-size: 14px;border-radius: 10px !important; cursor: pointer;">Upload File</button>
+                                    <p style="font-size: 12px;" id="customTxt"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-md-2">
+                                <label for="type" style="font-size: 16px;">Description</label>
+                            </div>
+                            <div class="col-md-10">
+                                <textarea name="decription" id="" style="height: 200px;" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button onclick="accept()" class="border-0 p-3 pl-5 pr-5 bg-white shadow" style="font-size: 14px;border-radius: 10px !important; cursor: pointer;"> Done </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---- Send Box Section ----->
+            <div class="send-box mt-5" style="display:none">
+                <div class="card pt-3 pl-5 mb-3">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <p class="text-muted">Critical</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>view all products purchase with Search - Data Grid view that with details....</p>
+                        </div>
+                        <div class="col-md-2">
+                            <i class="fas fa-trash text-muted mr-2 ml-2"></i>
+                            <i class="fas fa-download text-muted ml-2 mr-2"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card pt-3 pl-5 mb-3">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <p class="text-muted">Critical</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>view all products purchase with Search - Data Grid view that with details....</p>
+                        </div>
+                        <div class="col-md-2">
+                            <i class="fas fa-trash text-muted mr-2 ml-2"></i>
+                            <i class="fas fa-download text-muted ml-2 mr-2"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card pt-3 pl-5 mb-3">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <p class="text-muted">Critical</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>view all products purchase with Search - Data Grid view that with details....</p>
+                        </div>
+                        <div class="col-md-2">
+                            <i class="fas fa-trash text-muted mr-2 ml-2"></i>
+                            <i class="fas fa-download text-muted ml-2 mr-2"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card pt-3 pl-5 mb-3">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <p class="text-muted">Critical</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>view all products purchase with Search - Data Grid view that with details....</p>
+                        </div>
+                        <div class="col-md-2">
+                            <i class="fas fa-trash text-muted mr-2 ml-2"></i>
+                            <i class="fas fa-download text-muted ml-2 mr-2"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card pt-3 pl-5 mb-3">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <p class="text-muted">Critical</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>view all products purchase with Search - Data Grid view that with details....</p>
+                        </div>
+                        <div class="col-md-2">
+                            <i class="fas fa-trash text-muted mr-2 ml-2"></i>
+                            <i class="fas fa-download text-muted ml-2 mr-2"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card pt-3 pl-5 mb-3">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <p class="text-muted">Critical</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>view all products purchase with Search - Data Grid view that with details....</p>
+                        </div>
+                        <div class="col-md-2">
+                            <i class="fas fa-trash text-muted mr-2 ml-2"></i>
+                            <i class="fas fa-download text-muted ml-2 mr-2"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+		<script src="../js/wow.min.js"></script>
+        <script>
+          new WOW().init();
+        </script>
+        <script src="js/jQuery3.3.1.min.js"></script>
+        <!---Slider Laibiray-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/sliderComponents.js"></script>
+        <script src="js/e.js"></script>
+	</body>
+    
+
+
+</html>

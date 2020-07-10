@@ -1,0 +1,22 @@
+.input {
+    background-color: #f84961 !important;
+    border-radius: .7rem !important;
+    font-size: 14px !important;
+}
+::placeholder {
+    color: #FFF !important;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #FFF !important;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #FFF !important;
+  }
+  .submit-btn {
+    border-radius: .7rem !important;
+    font-size: 12px;
+    cursor: pointer;
+  }

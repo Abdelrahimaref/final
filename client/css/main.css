@@ -1,0 +1,346 @@
+.bg-purple {
+  background-color: #007bff !important;
+}
+
+.nav-icon-color {
+  color: #17a2b8;
+}
+
+.nav-icon-bg-color {
+  background-color: #17a2b8;
+}
+
+.grey-bg-color {
+  background: #B0B2BF;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px #f5f5f5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #777;
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 5px;
+  color: #464749;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+/***** Start keyframe Section From Left To right animation *****/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    opacity: 0.7;
+    transform: translateX(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+/*****   End keyframe Section From Left To right animation   *****/
+/*****  Start keyframe Section From Right To Left animation  *****/
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    opacity: 0.7;
+    transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+/*****   End keyframe Section From Left To Right animation   *****/
+/*****   Start keyframe Section From Bottom To Top animation   *****/
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  80% {
+    opacity: 0.7;
+    transform: translateY(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+/*****   Start keyframe Section From Bottom To Top animation   *****/
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes Appears {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1.2;
+  }
+}
+.image-width {
+  width: 8.5rem;
+  height: 2.5rem;
+}
+
+section {
+  margin-top: 10rem;
+}
+
+.icon-size {
+  font-size: 32px;
+}
+
+.img-icon-size {
+  width: 8rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.margin-top-6 {
+  margin-top: 6rem;
+}
+
+.margin-bottom-6 {
+  margin-bottom: 6rem;
+}
+
+.heading-primary {
+  color: #FFF;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 3rem;
+}
+.heading-primary--main {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1.5rem;
+  animation: moveInLeft 2s linear;
+}
+.heading-primary--main-2 {
+  color: #1674D1;
+}
+.heading-primary--main-white {
+  color: #FFF;
+}
+.heading-primary--sub {
+  display: block;
+  font-size: 7rem;
+  font-weight: 700;
+  letter-spacing: 1.75rem;
+  animation: moveInRight 2s linear;
+}
+.heading-primary--sub-2 {
+  color: #1674D1;
+}
+
+.heading-primary-2 {
+  color: #FFF;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  animation: moveInLeft 2s linear;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #1674D1, #43abff);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+}
+.heading-secondary:hover {
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  color: #777;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.paragraph-white {
+  font-size: 1.6rem;
+  color: #FFF;
+}
+
+.card {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background: #fff;
+}
+
+@media (max-width: 792px) {
+  .category-content {
+    width: 100% !important;
+    font-size: 14px;
+  }
+
+  .img-icon-size {
+    width: 5rem;
+  }
+
+  .nav-box {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .title-responsive {
+    font-size: 16px !important;
+    padding-top: 0.5rem;
+  }
+
+  .span1 {
+    margin-bottom: 2rem !important;
+  }
+
+  .span2 {
+    color: #000;
+    margin-left: 0px !important;
+    padding-top: 1rem !important;
+    padding-bottom: 0.95rem !important;
+    padding-left: 6.2rem !important;
+    padding-right: 7rem !important;
+    margin-top: 1rem !important;
+  }
+}
+.language-btn {
+  background-color: transparent;
+  border-radius: 1rem;
+}
+
+.line-section {
+  height: 5rem;
+  width: 100%;
+  background-color: #565353;
+  margin-top: 3rem;
+}
+
+.input {
+  background-color: #f84961 !important;
+  border-radius: 0.7rem !important;
+  font-size: 14px !important;
+}
+
+::placeholder {
+  color: #FFF !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #FFF !important;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #FFF !important;
+}
+
+.submit-btn {
+  border-radius: 0.7rem !important;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.nav-box {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.modal-content {
+  border-radius: 2rem;
+}
+
+.choose h3 .span1 {
+  text-transform: uppercase;
+  display: inline-block;
+  color: #000;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 5.2rem;
+  padding-right: 4.2rem;
+}
+.choose h3 .span2 {
+  color: #000;
+  margin-left: -4px;
+  padding-top: 0.9rem;
+  padding-bottom: 0.95rem;
+  padding-left: 5.2rem;
+  padding-right: 5.2rem;
+}
+.choose .content-details {
+  margin-top: 4rem;
+}
+.choose .account-content {
+  margin-top: 5rem;
+}
+
+/*# sourceMappingURL=main.css.map */

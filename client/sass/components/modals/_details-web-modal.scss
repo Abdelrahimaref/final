@@ -1,0 +1,32 @@
+.modal-content {
+    border-radius: 2rem;
+}
+.choose {
+    h3 {
+        .span1 {
+            text-transform: uppercase;
+            display: inline-block;
+            color: #000;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 5.2rem;
+            padding-right: 4.2rem;
+        }
+        .span2 {
+            color: #000;
+            margin-left: -4px;
+            padding-top: .9rem;
+            padding-bottom: 0.95rem;
+            padding-left: 5.2rem;
+            padding-right: 5.2rem;
+
+        }
+    }
+
+    .content-details {
+        margin-top: 4rem;
+    }
+    .account-content {
+        margin-top: 5rem;
+    }
+}

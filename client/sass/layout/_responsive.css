@@ -1,0 +1,29 @@
+@media (max-width: 792px) {
+  .category-content {
+    width: 100% !important;
+    font-size: 14px;
+  }
+  .img-icon-size {
+    width: 5rem;
+  }
+  .nav-box {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+  .title-responsive {
+    font-size: 16px !important;
+    padding-top: .5rem;
+  }
+  .span1 {
+    margin-bottom: 2rem !important;
+  }
+  .span2 {
+    color: #000;
+    margin-left: 0px !important;
+    padding-top: 1rem !important;
+    padding-bottom: 0.95rem !important;
+    padding-left: 6.2rem !important;
+    padding-right: 7rem !important;
+    margin-top: 1rem !important;
+  }
+}

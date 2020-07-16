@@ -26,4 +26,13 @@
     padding-right: 7rem !important;
     margin-top: 1rem !important;
   }
+  .message-details {
+    margin-top: 30px !important;
+    justify-content: start !important;
+    border: 1px solid #dee2e6 !important;
+    padding: 50px;
+  }
+  .message-details-content {
+    border: none !important;
+  }
 }

@@ -269,6 +269,17 @@ section {
     padding-right: 7rem !important;
     margin-top: 1rem !important;
   }
+
+  .message-details {
+    margin-top: 30px !important;
+    justify-content: start !important;
+    border: 1px solid #dee2e6 !important;
+    padding: 50px;
+  }
+
+  .message-details-content {
+    border: none !important;
+  }
 }
 .language-btn {
   background-color: transparent;
@@ -341,6 +352,63 @@ section {
 }
 .choose .account-content {
   margin-top: 5rem;
+}
+
+.progressBar {
+  counter-reset: step;
+}
+
+.progressBar li {
+  list-style: none;
+  float: left;
+  width: 20%;
+  position: relative;
+  text-align: center;
+}
+
+.active {
+  color: #17a2b8;
+}
+
+.progressBar li.active:before {
+  background-color: #17a2b8;
+  color: #FFF;
+}
+
+.progressBar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ddd;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  border-color: #17a2b8;
+  background-color: #FFF;
+  position: relative;
+  z-index: 2;
+}
+
+.progressBar li:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  top: 15px;
+  left: -50%;
+  z-index: 1;
+}
+
+.progressBar li.active + li:after {
+  background-color: #17a2b8;
+}
+
+.progressBar .active:after {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */

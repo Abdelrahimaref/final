@@ -139,10 +139,10 @@
                     <h1 class="text-center mt-5 pt-5">Sales Link</h1>
                     <li class="pt-5"><a href="dashboard.html"> <i class="fas fa-home f-20 ml-3 mr-3"></i> Dashboard </a> </li>
                     <li class="pt-5"><a href="offers.html"> <i class="fas fa-cubes f-20 ml-3 mr-3"></i> All Offers </a> </li>
-                    <li class="pt-5 active"><a href="reports.html"><i class="fas fa-comments ml-3 mr-3 fa-lg"></i> Reports</a></li>
-                    <li class="pt-5"><a href="coupons.html"><i class="fas fa-cogs f-20 ml-3 mr-3"></i> Coupons</a></li>
-                    <li class="pt-5"><a href="#"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>  FAQ</a></li>
-                    <li class="pt-5"><a href="#"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>  Payment</a></li>
+                    <li class="pt-5"><a href="reports.html"><i class="fas fa-comments ml-3 mr-3 fa-lg"></i> Reports</a></li>
+                    <li class="pt-5 active"><a href="coupons.html"><i class="fas fa-cogs f-20 ml-3 mr-3"></i> Coupons</a></li>
+                    <li class="pt-5"><a href="faq.html"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>  FAQ</a></li>
+                    <li class="pt-5"><a href="pay.html"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>  Payment</a></li>
 
                     <div class="mt-5 ml-5 pt-5">
                         <p><a href="#">Terms of services</a></p>
@@ -160,45 +160,29 @@
                     <nav class="pt-1" style="background-color: #ddd;">
                         <ul class="unstyled-list w-100">
                             <div class="row W-100">
-                                <div class="col-xl-4 col-lg-12">
-                                    <li class="border-right border-dark pl-5 pr-5 mt-3">
-                                        <div class="row">
-                                            <div class="col-5">
-                                                <select id="inputState" class="form-control shadow-none" style="background-color: transparent;">
-                                                    <option selected>Jun 19,2020</option>
-                                                    <option> Select </option>
-                                                    <option> date </option>
-                                                </select> 
-                                            </div>
-                                            <div class="col-1 mt-2">
-                                                :
-                                            </div>
-                                            <div class="col-6">
-                                                <select id="inputState" class="form-control shadow-none" style="background-color: transparent;">
-                                                    <option selected>Jun 19,2020</option>
-                                                    <option> Select </option>
-                                                    <option> date </option>
-                                                </select> 
-                                            </div>
+                                <div class="col-md-3">
+                                    <li class="border-right border-dark pl-5 pr-5">
+                                        <div class="form-group">
+                                            <input type="search" class="form-control" placeholder="search">
                                         </div>
                                     </li>
                                 </div>
-                                <div class="col-xl-4 col-lg-12">
+                                <div class="col-md-3">
                                     <li class="border-right border-dark pl-5 pr-5" style=" margin-top: 9px;">
                                         <div class="form-group">
                                             <select id="inputState" class="form-control  shadow-none" style="background-color: transparent;">
-                                                <option selected>Report Option</option>
-                                                <option> Select </option>
-                                                <option> date </option>
+                                                <option selected>Ordered by popularity</option>
+                                                <option>Ordered by time</option>
+                                                <option>Ordered by date</option>
                                             </select>
                                         </div>
                                     </li>
                                 </div>
-                                <div class="col-xl-4 col-lg-12">
-                                    <li class="border-right border-dark pl-3 pr-5" style=" margin-top: 9px;">
+                                <div class="col-md-3">
+                                    <li class="border-right border-dark pl-5 pr-5" style=" margin-top: 9px;">
                                         <div class="form-group">
                                             <select id="inputState" class="form-control  shadow-none border border-dark" style="background-color: transparent;">
-                                                <option selected>Graph Data:</option>
+                                                <option selected>Ordered by populatity</option>
                                                 <option>Ordered by time</option>
                                                 <option>Ordered by date</option>
                                             </select>
@@ -218,9 +202,6 @@
                                 <th scope="col">#</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Details</th>
-                                <th scope="col">Details</th>
-                                <th scope="col">Details</th>
-
                             </tr>
                         </thead>
                         <tbody>
@@ -228,42 +209,47 @@
                                 <th scope="row">1</th>
                                 <td>UI</td>
                                 <td>
+                                    <p style="width: 350px; word-wrap: break-word; line-height: 1.5;">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.Debitis maiores libero voluptate ipsam illo a tempore sequi error at pariatur, beatae, eligendi, nisi architecto quae vel recusandae? Voluptatibus, veritatis ratione!
-                                </td>
-                                <td>
-                                        Lorem ipsum dolor sit amet consectetur ratione!
-                                </td>
-                                <td>
-                                        Lorem ipsum dolor sit amet consectetur ratione!
+                                    </p> 
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">1</th>
+                                <th scope="row">2</th>
                                 <td>UI</td>
                                 <td>
+                                    <p style="width: 350px; word-wrap: break-word; line-height: 1.5;">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.Debitis maiores libero voluptate ipsam illo a tempore sequi error at pariatur, beatae, eligendi, nisi architecto quae vel recusandae? Voluptatibus, veritatis ratione!
-                                </td>
-                                <td>
-                                        Lorem ipsum dolor sit amet consectetur ratione!
-                                </td>
-                                <td>
-                                        Lorem ipsum dolor sit amet consectetur ratione!
-                                </td>
+                                    </p> 
+                                </td>                            
                             </tr>
                             <tr>
-                                <th scope="row">1</th>
+                                <th scope="row">3</th>
                                 <td>UI</td>
                                 <td>
+                                    <p style="width: 350px; word-wrap: break-word; line-height: 1.5;">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.Debitis maiores libero voluptate ipsam illo a tempore sequi error at pariatur, beatae, eligendi, nisi architecto quae vel recusandae? Voluptatibus, veritatis ratione!
-                                </td>
-                                <td>
-                                        Lorem ipsum dolor sit amet consectetur ratione!
-                                </td>
-                                <td>
-                                        Lorem ipsum dolor sit amet consectetur ratione!
-                                </td>
+                                    </p> 
+                                </td>                           
                             </tr>
-
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>UI</td>
+                                <td>
+                                    <p style="width: 350px; word-wrap: break-word; line-height: 1.5;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Debitis maiores libero voluptate ipsam illo a tempore sequi error at pariatur, beatae, eligendi, nisi architecto quae vel recusandae? Voluptatibus, veritatis ratione!
+                                    </p> 
+                                </td>                            
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>UI</td>
+                                <td>
+                                    <p style="width: 350px; word-wrap: break-word; line-height: 1.5;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Debitis maiores libero voluptate ipsam illo a tempore sequi error at pariatur, beatae, eligendi, nisi architecto quae vel recusandae? Voluptatibus, veritatis ratione!
+                                    </p> 
+                                </td>                            
+                            </tr>
                         </tbody>
 
                     </table>

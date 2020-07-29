@@ -62,7 +62,30 @@
                 }
             }
 
-
+            .modal-content {
+                position: relative;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                width: 100%;
+                pointer-events: auto;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                border-radius: 0.3rem;
+                outline: 0;
+                justify-content: center;
+                width: 300px;
+            }
+            .modal-open .modal {
+                display: flex !important;
+            }
+            input {
+                height: 37px !important;
+                margin-top: 10px;
+                font-size: 16px !important;
+            }
 
        </style>
 	</head>
@@ -141,8 +164,8 @@
                     <li class="pt-5 active"><a href="offers.html"> <i class="fas fa-cubes f-20 ml-3 mr-3"></i> All Offers </a> </li>
                     <li class="pt-5"><a href="reports.html"><i class="fas fa-comments ml-3 mr-3 fa-lg"></i> Reports</a></li>
                     <li class="pt-5"><a href="coupons.html"><i class="fas fa-cogs f-20 ml-3 mr-3"></i> Coupons</a></li>
-                    <li class="pt-5"><a href="#"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>  FAQ</a></li>
-                    <li class="pt-5"><a href="#"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>  Payment</a></li>
+                    <li class="pt-5"><a href="faq.html"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>  FAQ</a></li>
+                    <li class="pt-5"><a href="pay.html"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>  Payment</a></li>
 
                     <div class="mt-5 ml-5 pt-5">
                         <p><a href="#">Terms of services</a></p>
@@ -223,7 +246,7 @@
                                         </div>
                                     </div>
                                     <div class="text-center mt-4">
-                                        <a  href="#" class="btn btn-primary rounded p-2 pl-3 pr-3" style="font-size: 12px;border-radius:12px !important;" >Get Link + Code</a> 
+                                        <a  href="#" class="btn btn-primary rounded p-2 pl-3 pr-3" style="font-size: 12px;border-radius:12px !important;" data-toggle="modal" data-target=".agreeModal"  >Get Link + Code</a> 
                                     </div>
                                 </div>
                             </div>
@@ -252,7 +275,7 @@
                                         </div>
                                     </div>
                                     <div class="text-center mt-4">
-                                        <a  href="#" class="btn btn-primary rounded p-2 pl-3 pr-3" style="font-size: 12px;border-radius:12px !important;" >Get Link + Code</a> 
+                                        <a  href="#" class="btn btn-primary rounded p-2 pl-3 pr-3" style="font-size: 12px;border-radius:12px !important;" data-toggle="modal" data-target=".agreeModal"  >Get Link + Code</a> 
                                     </div>
                                 </div>
                             </div>
@@ -281,7 +304,7 @@
                                         </div>
                                     </div>
                                     <div class="text-center mt-4">
-                                        <a  href="#" class="btn btn-primary rounded p-2 pl-3 pr-3" style="font-size: 12px;border-radius:12px !important;" >Get Link + Code</a> 
+                                        <a  href="#" class="btn btn-primary rounded p-2 pl-3 pr-3" style="font-size: 12px;border-radius:12px !important;" data-toggle="modal" data-target=".agreeModal"  >Get Link + Code</a> 
                                     </div>
                                 </div>
                             </div>
@@ -310,7 +333,7 @@
                                         </div>
                                     </div>
                                     <div class="text-center mt-4">
-                                        <a  href="#" class="btn btn-primary rounded p-2 pl-3 pr-3" style="font-size: 12px;border-radius:12px !important;" >Get Link + Code</a> 
+                                        <a  href="#" class="btn btn-primary rounded p-2 pl-3 pr-3" style="font-size: 12px;border-radius:12px !important;" data-toggle="modal" data-target=".agreeModal"  >Get Link + Code</a> 
                                     </div>
                                 </div>
                             </div>
@@ -339,7 +362,7 @@
                                         </div>
                                     </div>
                                     <div class="text-center mt-4">
-                                        <a  href="#" class="btn btn-primary rounded p-2 pl-3 pr-3" style="font-size: 12px;border-radius:12px !important;" >Get Link + Code</a> 
+                                        <a  href="#" class="btn btn-primary rounded p-2 pl-3 pr-3" style="font-size: 12px;border-radius:12px !important;" data-toggle="modal" data-target=".agreeModal"  >Get Link + Code</a> 
                                     </div>
                                 </div>
                             </div>
@@ -368,7 +391,7 @@
                                         </div>
                                     </div>
                                     <div class="text-center mt-4">
-                                        <a  href="#" class="btn btn-primary rounded p-2 pl-3 pr-3" style="font-size: 12px;border-radius:12px !important;" >Get Link + Code</a> 
+                                        <a  href="#" class="btn btn-primary rounded p-2 pl-3 pr-3" style="font-size: 12px;border-radius:12px !important;" data-toggle="modal" data-target=".agreeModal"  >Get Link + Code</a> 
                                     </div>
                                 </div>
                             </div>
@@ -383,6 +406,37 @@
         </div>
 
     </main>
+
+        <!----------- Agree Modal ---------->
+            <div class="modal fade agreeModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="container">
+                                <h3>
+                                    To Continue You Must Agree
+                                </h3>
+                                <!--- The Top Section --->
+                                <div style="background-color: #d5d5d5; height: 250px; overflow: auto;" class="p-3">
+                                    <ul>
+                                        <li>- Agree To make afih sdhaf jksdhgkjsdag kjsdg kjkgdkja gnkj </li>
+                                        <li>- Agree To make afih sdhaf jksdhgkjs rha klhg kjlrah gkjlrhag dag kjsdg kjkgdkja gnkj </li>
+                                        <li>- Agree To make afih sdhaf jksdhgkjsdag kjsdg kjkgdkja gnkj </li>
+                                        <li>- Agree To make afih sdhaf jksdhgkjsdag kjsdg kjkgdkja gnkj </li>
+                                        <li>- Agree To make afih sdhaf jksdhgkjsdag kjsdg kjkgdkja gnkj </li>
+                                        <li>- Agree To make afih sdhaf jksdhgkjsdag kjsdg kjkgdkja gnkj </li>
+                                        <li>- Agree To make afih sdhaf jksdhgkjsdag kjsdg kjkgdkja gnkj </li>
+
+                                    </ul>
+                                </div>
+                                <button class="btn btn-primary btn-lg form-control" style="height: 30px;" >Agree</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
         <script src="js/particles.js"></script>
         <script src="js/app.js"></script>

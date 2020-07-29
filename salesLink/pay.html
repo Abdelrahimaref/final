@@ -23,19 +23,25 @@
        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       <!-------- Multiple Select ------->
+       <link rel="stylesheet" href="https://unpkg.com/multiple-select@1.5.2/dist/multiple-select.min.css">
+
 	   <!--Internet Explorer-->
 	    <script src="js/html5shiv.min.js"></script>
         <script src="js/respond.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+        
 
        <!---->
        
        <style>
-           @media(max-width: 992px) {
-                li {
-                    font-size: 10px;
-                }
-            }
+           body {
+               background-color: #f8f9fa !important;
+           }
+           input {
+               border: 0 !important;
+           }
+
        </style>
 	</head>
 	<body>
@@ -45,6 +51,7 @@
     <nav class="bg-purple pb-0 fixed-top">
         <div class="container-fluid">
             <div class="our-nav d-flex" style="flex-wrap: wrap;justify-content: space-between;">
+
                 <div class="left-nav">
                     <ul class="d-flex justify-content-end unstyled-list pt-4 pr-5">
                         <li class="pt-1 mr-3 slide-in">
@@ -105,15 +112,15 @@
         <!----------- Fixed Column Nav ---------->
         <div class="left" style="width: 15%;" >
             <!-- Sidebar (Fixed Column Navbar)-->
-            <div class="mt-1"style="width:100% ; height:100vh" >
-                <ul class="pt-5 unstyled-list bg-white shadow" style="position:fixed ; width: 15%; height: 100vh;" >
+            <div class="bg-white  mt-1"style="width:100% ; height:100vh ; " >
+                <ul class="pt-5 shadow unstyled-list bg-white list-left" style="position:fixed; width: 15% ; height: 100vh;" >
                     <h1 class="text-center mt-5 pt-5">Sales Link</h1>
-                    <li class="pt-5 active"><a href="dashboard.html"> <i class="fas fa-home f-20 ml-3 mr-3"></i> Dashboard </a> </li>
+                    <li class="pt-5"><a href="dashboard.html"> <i class="fas fa-home f-20 ml-3 mr-3"></i> Dashboard </a> </li>
                     <li class="pt-5"><a href="offers.html"> <i class="fas fa-cubes f-20 ml-3 mr-3"></i> All Offers </a> </li>
-                    <li class="pt-5"><a href="reports.html"><i class="fas fa-comments ml-3 mr-3 fa-lg"></i> Reports</a></li>
+                    <li class="pt-5 active"><a href="reports.html"><i class="fas fa-comments ml-3 mr-3 fa-lg"></i> Reports</a></li>
                     <li class="pt-5"><a href="coupons.html"><i class="fas fa-cogs f-20 ml-3 mr-3"></i> Coupons</a></li>
-                    <li class="pt-5"><a href="#"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>  FAQ</a></li>
-                    <li class="pt-5"><a href="#"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>  Payment</a></li>
+                    <li class="pt-5"><a href="faq.html"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>  FAQ</a></li>
+                    <li class="pt-5"><a href="pay.html"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>  Payment</a></li>
 
                     <div class="mt-5 ml-5 pt-5">
                         <p><a href="#">Terms of services</a></p>
@@ -125,77 +132,56 @@
         </div>
 
 
-        <div class="right pt-0" style="width: 84%;">
-            <div class="profile-top bg-white pb-5" >
-                <div class="container">
-                    <div class="img-box text-center " style="height: 300px;padding-top: 12rem;">
-                        <img src="images/cmt2.jpg" class=" rounded-circle" alt="" style="width: 100px; height: 100px;">
-                        <h1 class="pt-4  text-secondary mb-4">Abdo Aref</h1>
+        <div class="right pt-0" style="width: 85%;">
+            <div class="d-flex justify-content-center">
+                <div class="card form-card shadow-none p-5" style="width: 70%; margin-top: 12rem;">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <h2 class="pb-4">The total balance</h2>
+                            <h1 class="h1 text-primary">00.00 LE</h1>
+                            <p class="pt-4 h4" style="line-height: 28px;">The entire balance in your account now includes earnings and the outstanding balance as well.</p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <h2 class="pb-4">Pending balance</h2>
+                            <h1 class="text-primary">00.00 LE</h1>
+                            <p class="pt-4 h4" style="line-height: 28px;">Your earnings are held for 14 days before they can be used.</p>
+                        </div>                    
+                        <div class="col-md-4 text-center">
+                            <h2 class="pb-4">Profits can be withdrawn</h2>
+                            <h1 class="text-primary">00.00 LE</h1>
+                            <p class="pt-4 h4" style="line-height: 28px;">The amount you earned from selling the services</p>
+                        </div>                   
                     </div>
-                    <ul class="d-flex justify-content-between unstyled-list">
-                       <li class="text-center">
-                           <h3>
-                                <span><i class="fas fa-map-marker-alt mr-2 text-danger"></i></span> Country
-                           </h3>
-                           <h4 class="text-center mt-3">
-                               Egypt
-                           </h4>
-                        </li>
-                       <li class="text-center">
-                           <h3>
-                                <span><i class="fas fa-star mr-2 text-warning"></i></span> Rate
-                           </h3>
-                           <h4 class="text-center mt-3">
-                               5 %
-                           </h4>
-
-                        </li>
-                       <li class="text-center">
-                           <h3>
-                                <span><i class="fas fa-users mr-2 text-info"></i></span> Customers Number
-                           </h3>
-                           <h4 class="text-center mt-3">
-                               16
-                           </h4>
-
-                        </li>
-                       <li class="text-center">
-                           <h3>
-                                <span class="badge bg-success rounded-circle mr-2" style="width: 12px; height: 13px;">&nbsp;</span> Last occurrence
-                           </h3>
-                           <h4 class="text-center mt-3">
-                                Now
-                           </h4>
-                        </li>
-                       <li class="text-center">
-                           <h3>
-                                <span><i class="fas fa-sync-alt mr-2 text-danger"></i></span> Sales Number
-                           </h3>
-                           <h4 class="text-center mt-3">
-                                12 Project
-                           </h4>
-
-                        </li> 
-                    </ul>
-    
                 </div>
             </div>
-
-            <div class="projects">
-                <div class="container">
-                    <div class="card p-5 shadow-none">
-                        <h1>Lorem ipsum dolor sit </h1>
-                        <div class="pl-5 pr-5 pt-3">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, alias consequatur dolorem quos aspernatur cupiditate odit ut quaerat porro voluptatem provident doloribus nesciunt fugiat minima, eveniet, perferendis vitae. Laborum, maxime.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, alias consequatur dolorem quos aspernatur cupiditate odit ut quaerat porro voluptatem provident doloribus nesciunt fugiat minima, eveniet, perferendis vitae. Laborum, maxime  Saepe, alias consequatur dolorem quos aspernatur cupiditate odit ut quaerat porro voluptatem provident doloribus nesciunt fugiat minima, eveniet, perferendis vitae. Laborum, maxime</p>
-                        </div>
+            <div class="d-flex justify-content-center mt-5">
+                <div class="card form-card shadow-none" style="width: 70%;">
+                    <div class="header p-4 border-bottom text-muted">
+                        <h3>
+                            What do you wnat to do with your profits ?
+                        </h3> 
                     </div>
-                    <div class="card p-5 shadow-none mb-5">
-                        <h1>Lorem ipsum dolor sit </h1>
-                        <div class="pl-5 pr-5 pt-3">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, alias consequatur dolorem quos aspernatur cupiditate odit ut quaerat porro voluptatem provident doloribus nesciunt fugiat minima, eveniet, perferendis vitae. Laborum, maxime.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, alias consequatur dolorem quos aspernatur cupiditate odit ut quaerat porro voluptatem provident doloribus nesciunt fugiat minima, eveniet, perferendis vitae. Laborum, maxime  Saepe, alias consequatur dolorem quos aspernatur cupiditate odit ut quaerat porro voluptatem provident doloribus nesciunt fugiat minima, eveniet, perferendis vitae. Laborum, maxime</p>
-                        </div>
+                    <label class="container-inp pt-5 ml-4">
+                        Keep my balance at 4SOFT
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p class="text-muted pl-4">Amounts due from sale of services are sent to you via e-mail via PayPal daily when they exceed $ 10.</p>
+                    <div class="form-group">
+                        <div class="form-group">
+                            <div class="col-lg-12 form-group mt-5">
+                                <label for="paypal-nameID" class="text-secondary">Paypal Acount</label>
+                                <input type="text" name="paypal-name" id="paypal-nameID" class="c-form__control text-secondary" maxlength="60">
+                            </div> 
+                            <div class="col-lg-12 form-group mt-5">
+                                <label for="project-keyID" class="text-secondary">The amount required</label>
+                                <input type="text" name="project-key" id="project-keyID" class="c-form__control text-secondary" placeholder="00.00 LE" maxlength="60">
+                                <p class="form-note text-secondary">If you only want a portion of your earnings, specify the amount that you want to be sent to your PayPal account. Keep it 0.00 to send your full earnings.</p>    
+                            </div> 
+                            <div class="form-group d-flex justify-content-center">
+                                <button class="btn btn-primary btn-lg mt-4 pl-5 pr-5 pt-3 pb-3" onclick="success3()">Update</button>
+                            </div>
+                        </div>                    
                     </div>
                 </div>
             </div>
@@ -219,6 +205,15 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/sliderComponents.js"></script>
         <script src="js/e.js"></script>
+        <!------ Select Multible ----->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://unpkg.com/multiple-select@1.5.2/dist/multiple-select.min.js"></script>
+        <script>
+            $(function () {
+                $('.select-multi').multipleSelect()
+            })
+        </script>
+        <!-- End Of Multible Select -->
 	</body>
     
 
